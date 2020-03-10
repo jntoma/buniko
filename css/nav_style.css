@@ -1,0 +1,50 @@
+body {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  color: #7E0D51;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.mobnav {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.mobnav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.mobnav #navlinks {
+  z-index: 1;
+  float: right;
+  display: none;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 20px;
+  background-color: #7E0D51;
+  color: white;
+}
+
+.mobnav #navlinks:hover{
+
+}
+
+.mobnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #7E0D51;
+  font-size: 30px;
+  padding: 22px 20px;
+}
+
+.mobnav a.icon:hover {
+  color: rgba(126, 13, 81, 0.5);
+}
