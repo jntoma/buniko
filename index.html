@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/nav_style.css"> -->
     <link rel="stylesheet" type="text/css" href="css/index_style.css">
-    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d95e8cb781.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet"> -->
@@ -20,7 +20,7 @@
           <a href="index.html" id = "home">Home</a>
           <a href="product.html">Our Products</a>
           <a href="story.html">Our Story</a>
-          <a href="history.html">History of Kombucha</a>
+          <a href="faq.html">FAQ</a>
           <a href="contact.html">Contact</a>
         </div>
         <a href="javascript:void(0);" class="icon" id ="icon2" onclick="clickNavBar()">
@@ -38,6 +38,40 @@
         <p id = "subtitle"> kombucha, with love. </p>
       </div>
 
+      <div class = "newflav">
+        <div class = "parallax"></div>
+        <img id = "graphic" src = "images/applegraphic.png"/>
+
+
+        <h2> meet our crisp new flavor </h2>
+        <h3> apple </h3>
+        <img id = "divider" src = "images/divider.png"/>
+
+
+      </div>
+
+
+      <div class = "mission">
+        <h2> Our Mission </h2>
+        <span class = "framePara">
+          <img id = "frame" src = "images/frame.png"/>
+          <p> buni ko began out of a desire to spread the joy of healthy living. </p>
+          <br /> <br />
+          <p id = "smallerText">
+            1. To make sure that kombucha can be enjoyed by everybody,
+            we have a commitment to keep our products as cost-effective and natural as possible. <br /> <br />
+            2. We're dedicated to using fresh, locally sourced ingredients wherever possible to support
+            our communities. </p>
+
+          <a href = "story.html" id = "learnMore">
+            <p > Learn more about our beginnings </p>
+          </a>
+
+          <a href = "story.html" id = "learnMoreFlowers"><img id = "learnMoreFlowers"  src = "images/smallflower.png"/></a>
+           <a href = "story.html" id = "learnMoreArrow"><img id = "learnMoreArrow"  src = "images/rightarrow.png"/></a>
+        </span>
+      </div>
+
       <!-- <div class = "blueb">
         <img src = "images/kitchen.png"/>
         <p id = "title"> blueberry </p>
@@ -48,23 +82,63 @@
         <p> "insert testimonial here it is going to be something i can't get it vertically centered rn" </p>
       </div> -->
 
+      <a href="javascript:void(0);" class="upButton" id ="upButtonId" onclick="goUp()">
+        <img id = "up" src = "images/upbutton.png"/>
+      </a>
+
+      <footer class = "footer">
+        <img id = "footerImg" src = "images/footer.png"/>
+        <div class = "footerGrid">
+          <p id = "footerName"> buni ko </p>
+          <p id = "footerCopyright"> © Jessica Toma, 2020 </p>
+          <a href="index.html" id = "homeFooter">Home</a>
+          <a href="product.html" id = "productsFooter">Products</a>
+          <a href="story.html" id = "storyFooter">Story</a>
+          <a href="faq.html" id = "faqFooter">FAQ</a>
+          <a href="contact.html" id = "contactFooter">Contact</a>
+        </div>
+      </footer>
+
     </main>
+
+
 
     <script>
       function clickNavBar() {
         var x = document.getElementById("navlinks");
         var ham = document.getElementById("icon2");
         var close = document.getElementById("iconx2");
-        if (x.style.display === "block") {
-          x.style.display = "none";
+        if (x.style.width === "220px") {
+          x.style.width = "0px";
+          x.style.right = "-20px";
+          // x.style.display = "none";
           ham.style.display = "block";
           close.style.display = "none";
         } else {
+          x.style.right = "0px";
           x.style.display = "block";
+          x.style.width = "220px";
           ham.style.display = "none";
           close.style.display = "block";
         }
       }
+
+      mybutton = document.getElementById("upButtonId");
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function goUp() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+
     </script>
   </body>
   </html>

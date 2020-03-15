@@ -1,35 +1,24 @@
 body {
-  font-family: 'Patrick Hand', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
 }
 
-h1 {
-  font-family: 'Patrick Hand', sans-serif;
-  position: relative;
-  text-align: center;
-  font-size: 100px;
-  color: white;
-  margin-top: -300px;
-  z-index: 10;
+html {
+  scroll-behavior: smooth;
 }
 
-header p {
-  font-family: 'Patrick Hand', sans-serif;
-  position: relative;
-  text-align: center;
-  font-size: 30px;
-  color: white;
-  margin-top: -300px;
-  z-index: 10;
-}
+/* MOBILE NAVIGATION */
 
 .mobnav {
   font-size: 60px;
+  height: 100%;
   color: #7E0D51;
   padding-top: 10px;
   padding-left: 10px;
   overflow: hidden;
   position: relative;
-  z-index: 2;
+  text-align: center;
+  z-index: 99;
+
 }
 
 .mobnav a {
@@ -51,16 +40,24 @@ header p {
 
 .mobnav #navlinks {
   position: fixed;
+  height: 100%;
   z-index: 3;
   right: 0;
   display: none;
-  font-family: 'Patrick Hand', sans-serif;
   font-size: 20px;
   color: #7E0D51;
   background-color: white;
   padding: 10px;
-  line-height: 30px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, .5);
+  line-height: 40px;
   margin-top: 30px;
+  transition: 0.5s;
+  width:0;
+}
+
+.mobnav #navlinks a{
+  transition: 0.5s;
+  display:block;
 }
 
 .mobnav a.icon {
@@ -78,94 +75,265 @@ header p {
   text-decoration: underline;
 }
 
+/* PIC AND TITLE */
+
 .header{
   position: relative;
   color: white;
+  display: block;
+
 }
 
 .header img {
+  position: relative;
   width: 100%;
   height:100%;
   display: block;
+  margin-top: -15%;
+  z-index: 5;
 }
 
-.introtext {
-  white-space: nowrap;
-  position: absolute;
-  font-weight: bolder;
-  font-size: 10vw;
+h1 {
+  position: relative;
   text-align: center;
-  text-rendering: optimizeLegibility;
-    color: #fff;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border: 5px solid #5C083B;
-  border-radius: 7px;
+  font-size:  20vw;
+  color: white;
+  margin-top: -77%;
+  z-index: 10;
 }
 
-#subtitle {
-  font-weight: 100;
+.header p {
+  position: relative;
+  text-align: center;
   font-size: 5vw;
-  text-align: center;
-  text-rendering: optimizeLegibility;
-    color: #fff;
+  color: white;
+  z-index: 10;
 }
 
-.blueb {
+.newflav {
+  position: relative;
+  margin-top: 60%;
+}
+
+.newflav h2{
+  position: relative;
+  color: white;
+  padding-left: 12%;
+  font-weight: bold;
   display: grid;
-  grid-template-columns: 100px auto auto;
-  grid-template-rows: 200px auto auto;
-  margin-top: -280px;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr;
+  font-size: 8vw;
+  padding-bottom: 5%;
+  z-index: 10;
+  margin-top: -99%;
 }
 
-.blueb #title {
-  grid-column: 2 / span all;
-  grid-row: 2;
-  margin-left: 50px;
-  font-weight: bolder;
-  font-size: 12vw;
-  color: #296297;
-  z-index:2;
-  /* margin-left: 20%; */
+.newflav h3 {
+  position: relative;
+  z-index: 5;
+  padding-left: 47%;
+  margin-top: 45%;
+  font-size:15vw;
+  color: white;
+
 }
 
-.blueb #moreinfo {
-  grid-column: 1/span all;
-  grid-row: 3;
-  font-size: 6vw;
-  /* font-weight: 900; */
-  /* font-style: italic; */
-  color: #083259;
-  margin-left: 39%;
-  margin-top: 10px;
+.parallax {
+  /* The image used */
+  background-image: linear-gradient(to bottom, rgba(126, 13, 81, 1), rgba(185, 78, 85, 0.4)),
+  url("../images/orchard.jpg");
+
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: -100px;
+  z-index: 1;
+  width: 100%;
 }
 
-.blueb img {
-  grid-column: 1/ span all;
-  grid-row: 1;
-  height: 300px;
-  overflow: hidden;
+.newflav #graphic {
+  position: absolute;
+  margin-top: -109%;
+  z-index: 4;
+  width: 100%;
 }
 
-.testimonial p{
-  display: inline-block;
-  margin-top: 50px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+.newflav #divider {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 70px;
+  margin-top: 13%;
+}
+
+.mission h2 {
+  position: relative;
   text-align: center;
-  font-size: 25px;
-  color: #fff;
-  padding-top: 10px;
-  padding-left: 10px;
-  background-color: #7E0D51;
+  font-size: 8vw;
+  font-style: bold;
+  margin-top: -5%;
+  z-index: 2;
+  color: #7E0D51;
 }
 
+.framePara {
+  display: grid;
+  grid-template-columns: 15% 30% 40% 15%;
+  grid-template-rows: 10% 20% 30% 20% 20%;
+}
+
+.mission #frame {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  width: 100%;
+}
+
+.mission p {
+  grid-row: 2;
+  grid-column: 2 / 4;
+  text-align: center;
+  line-height: 6vw;
+  font-size: 5vw;
+  color: #7E0D51;
+}
+
+.mission #smallerText {
+  grid-row: 3;
+  font-size: 3vw;
+  line-height: 4vw;
+  text-align: left;
+}
+
+.mission #learnMore p, a {
+  grid-row: 5;
+  grid-column: 2 / 4;
+  font-size: 3vw;
+  text-align: center;
+  color: #7E0D51;
+}
+
+.mission #learnMoreArrow {
+  grid-row: 4;
+  grid-column: 3;
+  margin-left: 10%;
+  margin-top: -7%;
+  text-align: center;
+  color: #7E0D51;
+  width:80%;
+}
+
+.mission #learnMoreFlowers {
+  grid-row: 4;
+  grid-column: 2;
+
+  margin-top: -15%;
+  text-align: center;
+  color: #7E0D51;
+  width:110%;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 25% 12% 12% 12% 12% 12%;
+  grid-template-rows: 30% 60% 10%;
+}
+
+#footerName {
+  font-size: 6vw;
+  color: white;
+  grid-column: 1;
+  grid-row: 2;
+  margin-left: 5%;
+  margin-top: 8%;
+}
+
+#footerCopyright {
+  font-size: 2vw;
+  color: white;
+  grid-column: 1 / 3;
+  grid-row: 2;
+  margin-left: 5%;
+  margin-top: 20%;
+  /* margin-bottom: 16%; */
+}
+
+#homeFooter{
+  font-size: 3vw;
+  color: white;
+  grid-column: 2;
+  margin-top: 30%;
+  margin-left: 5%;
+  grid-row: 2;
+}
+
+#productsFooter{
+  font-size: 3vw;
+  color: white;
+  grid-column: 3;
+  margin-top: 30%;
+  margin-left: 20%;
+  grid-row: 2;
+}
+
+#storyFooter{
+  font-size: 3vw;
+  color: white;
+  grid-column: 4;
+  margin-top: 30%;
+  margin-left: 65%;
+  grid-row: 2;
+}
+
+#faqFooter{
+  font-size: 3vw;
+  color: white;
+  grid-column: 5;
+  margin-top: 30%;
+  margin-left: 68%;
+  grid-row: 2;
+}
+
+#contactFooter{
+  font-size: 3vw;
+  color: white;
+  grid-column: 6;
+  margin-top: 30%;
+  margin-left: 60%;
+  grid-row: 2;
+}
+
+.footer img {
+  width:100%;
+  margin-bottom: -100px;
+}
+
+#upButtonId {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+}
 
 @media screen and (min-width: 720px){
+  .header img {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px){
