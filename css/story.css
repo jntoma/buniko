@@ -467,11 +467,192 @@ p{
     line-height: 4vw;
   }
 
-}
+  .flip-card {
+    margin-top: 15%;
+    margin-left: 17%;
+    margin-bottom: 20%;
+    background-color: transparent;
+    transform: rotate(90deg);
+    width: 50vw;
+    height: 30vw;
+    }
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner{
+      transform: rotateX(180deg);
+    }
+
+    .flip-card:focus .flip-card-inner{
+      transform: rotateX(180deg);
+    }
+
+
+
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+
+    /* Style the back side */
+    .flip-card-back {
+      background-color: #7e0d51;
+      color: white;
+      transform: rotateX(180deg);
+    }
+
+    .flip-card-back h3, .flip-card-back p{
+      transform: rotate(270deg);
+      margin-top: 27%;
+    }
+
+    .flip-card-back h3{
+      font-size: 4vw;
+      margin-left: -28%;
+      text-decoration: underline;
+    }
+
+    .flip-card-back p{
+      font-size: 2vw;
+      margin-top: -10%;
+      font-style: italic;
+    }
+  }
+
 
 @media screen and (min-width: 1024px){
-  .mobnav h1{
-    display: block;
+  #frame {
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+
+  #mapLarge, #mapPokeLarge{
+    position: absolute;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 75px;
+  }
+
+  #text1{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 200px;
+    padding-right: 50px;
+  }
+
+  .dot {
+    margin:460px 2px;
+    margin-bottom: 350px;
+  }
+
+  .prev, .next {
+    position: absolute;
+    width: auto;
+    margin-top: 460px;
+  }
+
+
+  #liliesLarge, #lilies2Large{
+    grid-column: 3;
+    width: 100%;
+    /* margin-top: -35%;
+    margin-left: 7%; */
+  }
+
+  #liliesLarge{
+    margin-bottom: -280%;
+    margin-top:85%
+  }
+
+  #lilies2Large{
+    margin-top: 86%;
+    margin-bottom: -506px;
+    animation: fadeInAnimation 3s;
+              animation-iteration-count: infinite;
+              animation-fill-mode: forwards;
+  }
+
+  #text2{
+    font-size: 40px;
+    margin-bottom: -506px;
+  }
+
+  #text22{
+    font-size: 40px;
+    margin-top: 90%;
+    margin-bottom: -406px;
+  }
+
+  #planeLarge{
+    margin-bottom: -280%;
+
+  }
+
+  #text3{
+    font-size: 40px;
+    margin-bottom: -200%;
+  }
+
+  #emptyLarge{
+    margin-bottom: -200%;
+  }
+
+  #fullgrownLarge{
+    margin-bottom: -280%;
+  }
+
+  #text4{
+    font-size: 30px;
+    margin-bottom: -200%;
+    margin-top: 50%;
+
+  }
+
+  #kombuchaLarge{
+    margin-bottom: -200%;
+  }
+
+  #text5{
+    margin-bottom: -200%;
+    font-size: 30px;
+  }
+
+  .largeView h3{
+
+    font-size: 60px;
+  }
+
+  .largeView h4{
+    font-size: 18px;
+  }
+  .largeView p{
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .flip-card-back h3{
+    font-size: 30px;
+  }
+
+  .flip-card-back p{
+    font-size: 20px;
   }
 }
 
