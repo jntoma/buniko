@@ -1,65 +1,682 @@
-.container {
-  display:flex;
-  flex-wrap: wrap;
+body {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 60px;
+  height: 100%;
+  color: #7E0D51;
+  overflow: hidden;
+  position: relative;
+  z-index: 99;
+  text-decoration: none;
+  display: block;
+  float: left;
+  clear:left;
 }
 
 h2 {
-  text-align: center;
-  font-size: 50px;
-  margin-top: 10px;
+  color: #7E0D51;
+  font-style: italic;
+  margin-left: 5px;
+  font-size: 15px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
 img {
-  grid-column: 1/ span all;
-  grid-row: 1;
-  height: 250px;
-  overflow: hidden;
+  width: 100%;
 }
 
-.blueb, .strawb, .ginger, .blackb {
+#prod {
+  text-decoration: underline;
+}
+
+#divider2 {
+  position: relative;
+  z-index:90;
+  margin-top: -5%;
+}
+
+#divider3 {
+  position: relative;
+  z-index:90;
+  margin-top: -8%;
+}
+
+/* APPLE */
+
+.flavPicApple{
+  position: relative;
+  z-index: 1;
+  margin-top: -20%;
+  max-height: 130vw;
+
+  background-image: linear-gradient(to bottom, rgba(185, 78, 85, 0.1), rgba(185, 78, 85, 0.8)),
+  url("../images/orchard.jpg");
+
+  min-height: 130vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.apple {
   display: grid;
-  grid-row-gap: 50px;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 100px auto 100px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
 }
 
-#title {
-  grid-column: 3;
-  grid-row: 2;
-  margin-left: 50px;
-  font-weight: bolder;
-  font-size: 50px;
-  color: #296297;
-  z-index:2;
-  margin-top: -20px;
-  /* margin-left: 20%; */
-}
-
-.ginger #title, .blackb #title  {
-  grid-column: 1/span all;
-
-}
-
-.ginger img, .blackb img  {
-  grid-column: 4;
-  /* margin-left: 20%; */
-}
-
-#moreinfo{
-  grid-column: 1/span all;
+.apple #flavsign{
+  z-index: 10;
   grid-row: 3;
-  font-size: 25px;
-  white-space: nowrap;
-  /* font-weight: 900; */
-  /* font-style: italic; */
-  color: #083259;
-  margin-left: 65%;
-  margin-top: -40px;
-
+  grid-column: 1 / -1;
 }
 
-.ginger #moreinfo, .blackb #moreinfo {
-  grid-column: 1/span all;
-  margin-left: 10%;
+.apple #title {
+  text-align: center;
+  font-style: bold;
+  margin-top: 5%;
+  font-size: 12vw;
+  color: #7E0D51;
+  z-index: 11;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.apple #subtitle {
+  font-size: 5vw;
+}
+
+.apple #more {
+  font-style: bold;
+  color: white;
+  z-index: 90;
+  font-size: 5vw;
+  grid-row: 4;
+  grid-column: 1 / -1;
+  margin-top: 8%;
+  margin-left: 5%;
+}
+
+/* GINGER */
+
+.flavPicGinger{
+  position: relative;
+  z-index: 1;
+  margin-top: -20%;
+  max-height: 130vw;
+
+  background-image: linear-gradient(to bottom, rgba(185, 78, 85, 0.1), rgba(185, 78, 85, 0.8)),
+  url("../images/ginger.jpg");
+
+  min-height: 130vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.ginger {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.ginger #flavsign{
+  z-index: 10;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.ginger #title {
+  text-align: center;
+  font-style: bold;
+  margin-top: 5%;
+  font-size: 12vw;
+  color: #7E0D51;
+  z-index: 11;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.ginger #subtitle {
+  font-size: 5vw;
+}
+
+.ginger #more {
+  font-style: bold;
+  color: white;
+  z-index: 90;
+  font-size: 5vw;
+  grid-row: 4;
+  grid-column: 1 / -1;
+  margin-top: 8%;
+  margin-left: 5%;
+}
+
+/* STRAWBERRY */
+
+.flavPicStrawb{
+  position: relative;
+  z-index: 1;
+  margin-top: -20%;
+  max-height: 130vw;
+
+  background-image: linear-gradient(to bottom, rgba(185, 78, 85, 0.1), rgba(185, 78, 85, 0.8)),
+  url("../images/strawb.jpg");
+
+  min-height: 130vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.strawb {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.strawb #flavsign{
+  z-index: 10;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.strawb #title {
+  text-align: center;
+  font-style: bold;
+  margin-top: 5%;
+  font-size: 12vw;
+  color: #7E0D51;
+  z-index: 11;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.strawb #subtitle {
+  font-size: 5vw;
+}
+
+.strawb #more {
+  font-style: bold;
+  color: white;
+  z-index: 90;
+  font-size: 5vw;
+  grid-row: 4;
+  grid-column: 1 / -1;
+  margin-top: 8%;
+  margin-left: 5%;
+}
+
+/* BLACKBERRY */
+
+.flavPicBlackb{
+  position: relative;
+  z-index: 1;
+  margin-top: -20%;
+  max-height: 130vw;
+
+  background-image: linear-gradient(to bottom, rgba(185, 78, 85, 0.1), rgba(185, 78, 85, 0.8)),
+  url("../images/blackb.jpg");
+
+  min-height: 130vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.blackb {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.blackb #flavsign{
+  z-index: 10;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.blackb #title {
+  text-align: center;
+  font-style: bold;
+  margin-top: 5%;
+  font-size: 12vw;
+  color: #7E0D51;
+  z-index: 11;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.blackb #subtitle {
+  font-size: 5vw;
+}
+
+.blackb #more {
+  font-style: bold;
+  color: white;
+  z-index: 90;
+  font-size: 5vw;
+  grid-row: 4;
+  grid-column: 1 / -1;
+  margin-top: 8%;
+  margin-left: 5%;
+}
+
+/* BLUEBERRY  */
+
+.flavPicBlueb{
+  position: relative;
+  z-index: 1;
+  margin-top: -20%;
+  max-height: 130vw;
+
+  background-image: linear-gradient(to bottom, rgba(185, 78, 85, 0.1), rgba(185, 78, 85, 0.8)),
+  url("../images/blueb.jpg");
+
+  min-height: 130vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.blueb {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.blueb #flavsign{
+  z-index: 10;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.blueb #title {
+  text-align: center;
+  font-style: bold;
+  margin-top: 5%;
+  font-size: 12vw;
+  color: #7E0D51;
+  z-index: 11;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.blueb #subtitle {
+  font-size: 5vw;
+}
+
+.blueb #more {
+  font-style: bold;
+  color: white;
+  z-index: 90;
+  font-size: 5vw;
+  grid-row: 4;
+  grid-column: 1 / -1;
+  margin-top: 8%;
+  margin-left: 5%;
+}
+
+
+/* LEMON  */
+
+.flavPicLemon{
+  position: relative;
+  z-index: 1;
+  margin-top: -20%;
+  max-height: 130vw;
+
+  background-image: linear-gradient(to bottom, rgba(185, 78, 85, 0.1), rgba(185, 78, 85, 0.8)),
+  url("../images/lemon.jpg");
+
+  min-height: 130vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.lemon {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.lemon #flavsign{
+  z-index: 10;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.lemon #title {
+  text-align: center;
+  font-style: bold;
+  margin-top: 5%;
+  font-size: 12vw;
+  color: #7E0D51;
+  z-index: 11;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.lemon #subtitle {
+  font-size: 5vw;
+}
+
+.lemon #more {
+  font-style: bold;
+  color: white;
+  z-index: 90;
+  font-size: 5vw;
+  grid-row: 4;
+  grid-column: 1 / -1;
+  margin-top: 8%;
+  margin-left: 5%;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 20% 50% 20%;
+  grid-template-rows: 20% 60% 20%;
+}
+
+
+/* RASPBERRY  */
+
+.flavPicRasp{
+  position: relative;
+  z-index: 1;
+  margin-top: -20%;
+  max-height: 130vw;
+
+  background-image: linear-gradient(to bottom, rgba(185, 78, 85, 0.1), rgba(185, 78, 85, 0.8)),
+  url("../images/rasp.jpg");
+
+  min-height: 130vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.rasp {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.rasp #flavsign{
+  z-index: 10;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.rasp #title {
+  text-align: center;
+  font-style: bold;
+  margin-top: 5%;
+  font-size: 12vw;
+  color: #7E0D51;
+  z-index: 11;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.rasp #subtitle {
+  font-size: 5vw;
+}
+
+.rasp #more {
+  font-style: bold;
+  color: white;
+  z-index: 90;
+  font-size: 5vw;
+  grid-row: 4;
+  grid-column: 1 / -1;
+  margin-top: 8%;
+  margin-left: 5%;
+}
+
+
+/* MANGO  */
+
+.flavPicMango{
+  position: relative;
+  z-index: 1;
+  margin-top: -20%;
+  max-height: 130vw;
+
+  background-image: linear-gradient(to bottom, rgba(185, 78, 85, 0.1), rgba(185, 78, 85, 0.8)),
+  url("../images/mango.jpg");
+
+  min-height: 130vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.mango {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.mango #flavsign{
+  z-index: 10;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.mango #title {
+  text-align: center;
+  font-style: bold;
+  margin-top: 5%;
+  font-size: 12vw;
+  color: #7E0D51;
+  z-index: 11;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.mango #subtitle {
+  font-size: 5vw;
+}
+
+.mango #more {
+  font-style: bold;
+  color: white;
+  z-index: 90;
+  font-size: 5vw;
+  grid-row: 4;
+  grid-column: 1 / -1;
+  margin-top: 8%;
+  margin-left: 5%;
+}
+
+
+/* PEACH */
+
+.flavPicPeach{
+  position: relative;
+  z-index: 1;
+  margin-top: -20%;
+  max-height: 130vw;
+
+  background-image: linear-gradient(to bottom, rgba(185, 78, 85, 0.1), rgba(185, 78, 85, 0.8)),
+  url("../images/peach.jpg");
+
+  min-height: 130vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.peach {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.peach #flavsign{
+  z-index: 10;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.peach #title {
+  text-align: center;
+  font-style: bold;
+  margin-top: 5%;
+  font-size: 12vw;
+  color: #7E0D51;
+  z-index: 11;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.peach #subtitle {
+  font-size: 5vw;
+}
+
+.peach #more {
+  font-style: bold;
+  color: white;
+  z-index: 90;
+  font-size: 5vw;
+  grid-row: 4;
+  grid-column: 1 / -1;
+  margin-top: 8%;
+  margin-left: 5%;
+}
+
+
+
+.intro {
+  display: grid;
+  grid-template-columns: 20% 50% 20%;
+  grid-template-rows: 20% 60% 20%;
+}
+
+
+#sign {
+  z-index:91;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  grid-column: 1/-1;
+  grid-row: 1 / -1;
+}
+
+#introtext {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: -5%;
+  grid-column: 2;
+  grid-row: 2;
+  color: #7E0D51;
+  font-style: bold;
+  text-align: center;
+  font-size: 4vw;
+}
+
+#upButtonId {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+}
+
+#upButtonId img{
+  width: 60px;
+  height: 60px;
+}
+
+
+
+
+@media screen and (min-width: 600px){
+  #flavorPic {
+    position: relative;
+    z-index: 1;
+    margin-top: -21%;
+    max-height: 130vw;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 720px){
+}
+
+@media screen and (min-width: 1024px){
 }

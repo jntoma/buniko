@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/nav_style.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d95e8cb781.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet"> -->
+    <title>buni ko</title>
+  </head>
+  <body>
+    <div class="skip"><a href="#fname">Skip to Main Content</a></div>
+    <header>
+        <a href = "index.html"><h1> buni ko </h1></a>
+
+      <div class = "mobnav">
+        <div id = "navlinks">
+          <a href="index.html" >Home</a>
+          <a href="product.html" >Our Products</a>
+          <a href="story.html">Our Story</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html" id = "cont">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="clickNavBar()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="javascript:void(0);" class="iconx" id ="iconx2" onclick="clickNavBar()">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+
+      <div class = "tabnav">
+        <h1> buni ko</h1>
+        <div id = "navlinkstab">
+
+          <a href="index.html">Home</a> <br />
+          <a href="product.html">Our Products</a> <br />
+          <a href="story.html">Our Story</a> <br />
+          <a href="story.html">FAQ</a> <br />
+        </div>
+
+        <a href="javascript:void(0);" class="iconDown" id ="iconD" onclick="clickDownBar()">
+          <i class="fas fa-caret-down"></i> </a>
+        <a href="javascript:void(0);" class="iconUp" id ="iconU" onclick="clickDownBar()">
+          <i class="fas fa-caret-up"></i>
+        </a>
+        <a href="javascript:void(0);" id = "home" onclick="clickDownBar()">Contact</a>
+      </div>
+    </header>
+
+    <main>
+
+
+      <h2> Contact Form </h2>
+
+      <img id = "divider1" src = "images/divider2.png" />
+
+      <div class="container">
+      <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="your name">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="your last name">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="emailadd" placeholder="example@gmail.com">
+
+        <label for="email">Subject</label>
+        <input type="text" id="subject" name="subjectl" placeholder="how can we help you?">
+
+        <label for="subject">Body</label>
+        <textarea id="body" name="body" placeholder="you can give us more details here" style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+
+    </div>
+    <img id = "divider2" src = "images/divider2.png" />
+
+      <a href="javascript:void(0);" class="upButton" id ="upButtonId" onclick="goUp()">
+        <img id = "up" src = "images/upbutton.png"/>
+      </a>
+
+      <footer class = "footer">
+        <img id = "footerImg" src = "images/footer.png"/>
+        <div class = "footerGrid">
+          <p id = "footerName"> buni ko </p>
+          <p id = "footerCopyright"> © Jessica Toma, 2020 </p>
+          <a href="index.html" id = "homeFooter">Home</a>
+          <a href="product.html" id = "productsFooter">Products</a>
+          <a href="story.html" id = "storyFooter">Story</a>
+          <a href="faq.html" id = "faqFooter">FAQ</a>
+          <a href="contact.html" id = "contactFooter">Contact</a>
+        </div>
+      </footer>
+
+    </main>
+
+    <script type="text/javascript" src="js/navscroll.js"></script>
+  </body>
+  </html>

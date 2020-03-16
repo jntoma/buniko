@@ -5,69 +5,174 @@
     <!-- <link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/product_style.css">
     <link rel="stylesheet" type="text/css" href="css/nav_style.css">
+    <link rel="stylesheet" type="text/css" href="css/product_style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d95e8cb781.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet"> -->
     <title>buni ko</title>
   </head>
   <body>
     <header>
-      <div class = "mobnav">
+      <div class="skip"><a href="#intro">Skip to Main Content</a></div>
         <a href = "index.html"><h1> buni ko </h1></a>
+
+      <div class = "mobnav">
         <div id = "navlinks">
-          <a href="product.html">Our Products</a>
+          <a href="index.html" >Home</a>
+          <a href="product.html" id = "prod">Our Products</a>
           <a href="story.html">Our Story</a>
-          <a href="history.html">History of Kombucha</a>
+          <a href="faq.html">FAQ</a>
           <a href="contact.html">Contact</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="clickNavBar()">
           <i class="fa fa-bars"></i>
         </a>
+        <a href="javascript:void(0);" class="iconx" id ="iconx2" onclick="clickNavBar()">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+
+      <div class = "tabnav">
+        <div id = "navlinkstab">
+
+          <a href="index.html">Home</a> <br />
+
+          <a href="story.html">Our Story</a> <br />
+          <a href="faq.html">FAQ</a> <br />
+        </div>
+
+        <a href="javascript:void(0);" class="iconDown" id ="iconD" onclick="clickDownBar()">
+          <i class="fas fa-caret-down"></i> </a>
+        <a href="javascript:void(0);" class="iconUp" id ="iconU" onclick="clickDownBar()">
+          <i class="fas fa-caret-up"></i>
+        </a>
+        <a href="javascript:void(0);" id = "home" onclick="clickDownBar()">Our Products</a>
       </div>
     </header>
 
     <main>
 
-      <class id = head>
-        <h2> Our Products </h2>
-      </class>
+
+      <h2> Our Products </h2>
+
+      <div class = "intro" id = "intro">
+        <img id = "sign" src = "images/sign.png"/>
+        <p id = "introtext"> We've worked hard to create these nine wonderful flavors for you! <br /> <br />
+        Enjoy! </p>
+      </div>
+      <img id = "divider2" src = "images/divider2.png"/>
       <div class = "container">
+        <div class = "apple">
+          <div class = "flavPicApple"></div>
+          <img id = "flavsign" src = "images/flavsign.png"/>
+          <p id = "title"> apple <br /> <span id = "subtitle"> our crisp new flavor </span>  </p>
+          <p id = "more"> learn more </p>
+        </div>
+        <img id = "divider3" src = "images/divider2.png"/>
         <div class = "ginger">
-          <img src = "images/kitchen.png"/>
-          <p id = "title"> ginger </p>
-          <p id = "moreinfo"> the original. </p>
+          <div class = "flavPicGinger"></div>
+          <img id = "flavsign" src = "images/flavsign.png"/>
+          <p id = "title"> ginger <br /> <span id = "subtitle"> our tried & true original </span>  </p>
+          <p id = "more"> learn more </p>
         </div>
+        <img id = "divider3" src = "images/divider2.png"/>
         <div class = "strawb">
-          <img src = "images/kitchen.png"/>
-          <p id = "title"> strawberry </p>
-          <p id = "moreinfo"> a taste of summer. </p>
+          <div class = "flavPicStrawb"></div>
+          <img id = "flavsign" src = "images/flavsign.png"/>
+          <p id = "title"> strawberry <br /> <span id = "subtitle"> a sweet taste of home </span>  </p>
+          <p id = "more"> learn more </p>
         </div>
+        <img id = "divider3" src = "images/divider2.png"/>
         <div class = "blackb">
-          <img src = "images/kitchen.png"/>
-          <p id = "title"> blackberry </p>
-          <p id = "moreinfo"> tall, dark, and handsome. </p>
+          <div class = "flavPicBlackb"></div>
+          <img id = "flavsign" src = "images/flavsign.png"/>
+          <p id = "title"> blackberry <br /> <span id = "subtitle"> tall, dark, and handsome </span>  </p>
+          <p id = "more"> learn more </p>
         </div>
+        <img id = "divider3" src = "images/divider2.png"/>
         <div class = "blueb">
-          <img src = "images/kitchen.png"/>
-          <p id = "title"> blueberry </p>
-          <p id = "moreinfo"> our newest flavor. </p>
+          <div class = "flavPicBlueb"></div>
+          <img id = "flavsign" src = "images/flavsign.png"/>
+          <p id = "title"> blueberry <br /> <span id = "subtitle"> a refreshing twist </span>  </p>
+          <p id = "more"> learn more </p>
+        </div>
+        <img id = "divider3" src = "images/divider2.png"/>
+        <div class = "lemon">
+          <div class = "flavPicLemon"></div>
+          <img id = "flavsign" src = "images/flavsign.png"/>
+          <p id = "title"> lemon <br /> <span id = "subtitle"> a soothing mix </span>  </p>
+          <p id = "more"> learn more </p>
+        </div>
+        <img id = "divider3" src = "images/divider2.png"/>
+        <div class = "rasp">
+          <div class = "flavPicRasp"></div>
+          <img id = "flavsign" src = "images/flavsign.png"/>
+          <p id = "title"> raspberry <br /> <span id = "subtitle"> our favorite so far </span>  </p>
+          <p id = "more"> learn more </p>
+        </div>
+        <img id = "divider3" src = "images/divider2.png"/>
+        <div class = "mango">
+          <div class = "flavPicMango"></div>
+          <img id = "flavsign" src = "images/flavsign.png"/>
+          <p id = "title"> mango <br /> <span id = "subtitle"> a tropical delight </span>  </p>
+          <p id = "more"> learn more </p>
+        </div>
+        <img id = "divider3" src = "images/divider2.png"/>
+        <div class = "peach">
+          <div class = "flavPicPeach"></div>
+          <img id = "flavsign" src = "images/flavsign.png"/>
+          <p id = "title"> peach <br /> <span id = "subtitle"> a taste of summer </span>  </p>
+          <p id = "more"> learn more </p>
         </div>
       </div>
 
+      <a href="javascript:void(0);" class="upButton" id ="upButtonId" onclick="goUp()">
+        <img id = "up" src = "images/upbutton.png"/>
+      </a>
+
+      <footer class = "footer">
+        <img id = "footerImg" src = "images/footer.png"/>
+        <div class = "footerGrid">
+          <p id = "footerName"> buni ko </p>
+          <p id = "footerCopyright"> © Jessica Toma, 2020 </p>
+          <a href="index.html" id = "homeFooter">Home</a>
+          <a href="product.html" id = "productsFooter">Products</a>
+          <a href="story.html" id = "storyFooter">Story</a>
+          <a href="faq.html" id = "faqFooter">FAQ</a>
+          <a href="contact.html" id = "contactFooter">Contact</a>
+        </div>
+
+        <div class = "footerLarge">
+          <p id = "contact"> Contact Form </p>
+          <div class="container">
+          <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="your name">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="your last name">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="emailadd" placeholder="example@gmail.com">
+
+            <label for="email">Subject</label>
+            <input type="text" id="subject" name="subjectl" placeholder="how can we help you?">
+
+            <label for="subject">Body</label>
+            <textarea id="body" name="body" placeholder="you can give us more details here" style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+          </form>
+        </div>
+      </footer>
 
     </main>
 
-    <script>
-      function clickNavBar() {
-        var x = document.getElementById("navlinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
+    <script type="text/javascript" src="js/navscroll.js"></script>
   </body>
   </html>
