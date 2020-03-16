@@ -207,7 +207,7 @@ p{
     display: none;
   }
 
-  .container {
+  /* .container {
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -274,7 +274,7 @@ p{
     max-height: 200px;
     grid-column: 2;
     grid-row:4;
-  }
+  } */
 }
 
 @media screen and (min-width: 1024px){

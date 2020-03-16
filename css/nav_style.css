@@ -84,6 +84,22 @@
   right: 20px;
 }
 
+.mobnav a:hover{
+  text-decoration: none;
+  border-bottom: 5px solid #B94E55;
+  border-top: 5px solid #B94E55;
+}
+
+.mobnav a.icon:hover, #iconx2 {
+  border-bottom: none;
+  border-top: none;
+}
+
+.mobnav #home:hover, .mobnav #prod:hover, .mobnav #faq:hover, .mobnav #cont:hover, .mobnav #story:hover{
+  text-decoration: none;
+  border-bottom: 5px solid #B94E55;
+}
+
 .tabnav{
   display: none;
 }
@@ -120,7 +136,7 @@
     float: right;
     color: #7E0D51;
     font-size: 30px;
-    top: 5px;
+    top: 10px;
     right: 10px;
   }
 
@@ -131,7 +147,7 @@
     float: right;
     color: #7E0D51;
     font-size: 30px;
-    top: 5px;
+    top: 10px;
     right: 10px;
     /* margin-top: 5px; */
   }
@@ -139,7 +155,7 @@
   .tabnav #home {
     position: relative;
     z-index: 99;
-    margin-top: 10px;
+    margin-top: 16px;
     margin-right: 25px;
     float:right;
     text-decoration: none;
@@ -181,6 +197,11 @@
     right: 20px;
   }
 
+  .tabnav a:hover{
+    text-decoration: none;
+    border-bottom: 5px solid #B94E55;
+  }
+
 }
 
 @media screen and (min-width: 1024px){
@@ -189,6 +210,43 @@
   }
 
   .webnav{
+    position: relative;
+    z-index: 101;
+    display: block;
+  }
 
+  .webnav #navlinks{
+    color: #7E0D51;
+    z-index: 101;
+    float: right;
+    margin-top: 20px;
+    margin-right: 25px;
+  }
+
+  .webnav a{
+    color: #7E0D51;
+    z-index: 101;
+    text-decoration: none;
+    font-size: 2vw;
+    margin-left: 30px;
+  }
+
+  .webnav a:hover{
+    background-color: #B94E55;
+    color: white;
+    padding: 5px;
+  }
+
+  .webnav #home{
+    z-index: 101;
+    text-decoration: none;
+    border-bottom: 5px solid #B94E55;
+    color: #B94E55;
+    font-style: bold;
+  }
+
+  .webnav #home:hover{
+    color: white;
+    border-bottom: 5px solid white;
   }
 }
