@@ -72,7 +72,93 @@
       <class id = head>
         <h2> Our Story </h2>
       </class>
-      <div class = "container">
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <img class = "frames" id = "frame" src="images/framehoriz.png">
+        <div class="mySlides fade">
+          <!-- <img class = "frames" id = "frame" src="images/framehoriz.png"> -->
+          <div class = "firstSlide">
+            <img id = "mapLarge" src="images/map.png">
+            <img id = "mapPokeLarge" src="images/mappoke.png">
+            <div class="text" id = "text1">The story of buni ko begins in Romania where Crina,
+              the founder of buni ko, was born.</div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <img class = "frames" id = "frame" src="images/framehoriz.png"> -->
+          <div class = "secondSlide">
+            <img id = "liliesLarge" src="images/lilies1.png">
+            <img id = "lilies2Large" src="images/lilies2.png">
+            <div class="text" id = "text2">She was named for the lilies in the garden</div>
+            <div class="text" id = "text22">of her childhood home.</div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <img class = "frames" id = "frame" src="images/framehoriz.png"> -->
+          <div class = "thirdSlide">
+            <img id = "planeLarge" src="images/plane.png">
+            <div class="text" id = "text3"> Crina carried a love for nature, even when she moved
+            to the less wild suburbs of Michigan.</div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <img class = "frames" id = "frame" src="images/framehoriz.png"> -->
+          <div class = "fourthSlide">
+            <img id = "emptyLarge" src="images/empty.png">
+            <img id = "fullgrownLarge" src="images/fullgrown.png">
+            <div class="text" id = "text4">She brought seeds to life and helped flowers bloom.
+            She started making kombucha for herself in 2017 as she brought more nature
+          into her home.</div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <img class = "frames" id = "frame" src="images/framehoriz.png"> -->
+          <div class = "fifthSlide">
+            <img id = "kombuchaLarge" src="images/kombucha.png">
+            <div class="text" id = "text5">But nature gives to all, she thought, and so should she. So in 2020,
+              she began buni ko to share her love for the earth with others.</div>
+          </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+
+      <div class = "largeView">
+        <h3> the story of buni ko</h3>
+        <h4> the slides above have been reproduced below for those who do not prefer slideshows</h4>
+        <p> The story of buni ko begins in Romania where Crina,
+          the founder of buni ko, was born. <br /> <br />
+          She was named for the lilies in the garden of her childhood home. <br /> <br />
+          Crina carried a love for nature, even when she moved
+          to the less wild suburbs of Michigan. <br /> <br />
+          She brought seeds to life and helped flowers bloom.
+          She started making kombucha for herself in 2017 as she brought more nature
+          into her home. <br /> <br />
+          But nature gives to all, she thought, and so should she. So in 2020,
+            she began buni ko to share her love for the earth with others.
+        </p>
+
+      </div>
+
+
+
+      <div class = "container-mob">
         <img id = "map" src = "images/map.png">
         <img id = "mappoke" src = "images/mappoke.png">
         <p id = "firstt"> The story of buni ko begins in Romania where Crina,
@@ -101,7 +187,7 @@
           <img id = "fullgrown" src = "images/fullgrown.png">
           <p id = "fourtht"> She brought seeds to life and helped flowers bloom.
           She started making kombucha for herself in 2017 as she brought more nature
-        into her life. </p>
+        into her home. </p>
         </div>
 
         <img id = "divide2" src = "images/halfdivider.png">

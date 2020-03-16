@@ -205,6 +205,25 @@
 }
 
 @media screen and (min-width: 1024px){
+  .skip a{
+    background: white;
+    left: 0px;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+
+    position: absolute;
+    margin-top: -60px;
+  }
+
+  .skip a:focus{
+    position: relative;
+    }
+
+  :focus {
+    border: 2px solid #7E0D51;
+    }
   .tabnav{
     display: none;
   }
