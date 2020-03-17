@@ -253,6 +253,10 @@
     margin-left: 30px;
   }
 
+  .webnav h1{
+    color: white;
+  }
+
   .webnav a:hover{
     background-color: #B94E55;
     color: white;
