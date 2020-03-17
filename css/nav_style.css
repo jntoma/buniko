@@ -109,6 +109,9 @@
 }
 
 @media screen and (min-width: 720px){
+  .head{
+    display: none;
+  }
   .mobnav{
     display: none;
   }
@@ -246,7 +249,7 @@
   }
 
   .webnav a{
-    color: white;
+    color: #7E0D51;
     z-index: 101;
     text-decoration: none;
     font-size: 2vw;

@@ -25,30 +25,33 @@
   </head>
   <body>
     <header>
-      <div class="skip"><a href="#intro">Skip to Main Content</a></div>
+      <div class="skip"><a aria-label = "skip to main content" href="#intro">Skip to Main Content</a></div>
+      <a aria-label = "home page" href = "index.html"><h1> buni ko </h1></a>
+
       <div class = "mobnav">
-        <a href = "index.html"><h1> buni ko </h1></a>
         <div id = "navlinks">
-          <a href="index.html" >Home</a>
-          <a href="product.html" >Our Products</a>
-          <a href="story.html">Our Story</a>
-          <a href="faq.html" id = "faq">FAQ</a>
-          <a href="contact.html">Contact</a>
+          <a aria-label = "home page" href="index.html" >Home</a>
+          <a aria-label = "our products" href="product.html" >Our Products</a>
+          <a aria-label = "our story" href="story.html">Our Story</a>
+          <a aria-label = "frequently asked questions" href="faq.html"id = "faq">FAQ</a>
+          <a aria-label = "contact form" href="contact.html">Contact</a>
         </div>
-        <a aria-label = "open navigation" href="javascript:void(0);" class="icon" id ="icon2" onclick="clickNavBar()">
-          <i class="fa fa-bars"></i> </a>
+        <a aria-label = "open navigation" href="javascript:void(0);" class="icon" onclick="clickNavBar()">
+          <i class="fa fa-bars"></i>
+        </a>
         <a aria-label = "close navigation" href="javascript:void(0);" class="iconx" id ="iconx2" onclick="clickNavBar()">
           <i class="fas fa-times"></i>
         </a>
       </div>
 
       <div class = "tabnav">
-        <h1> buni ko</h1>
         <div id = "navlinkstab">
 
-          <a href="index.html">Home</a> <br />
-          <a href="product.html">Our Products</a> <br />
-          <a href="story.html">Our Story</a> <br />
+          <a aria-label = "home page" href="index.html">Home</a> <br />
+          <a aria-label = "our products" href="product.html">Our Products</a> <br />
+
+          <a aria-label = "our story" href="story.html">Our Story</a> <br />
+
         </div>
 
         <a aria-label = "open navigation" href="javascript:void(0);" class="iconDown" id ="iconD" onclick="clickDownBar()">
@@ -56,16 +59,15 @@
         <a aria-label = "close navigation" href="javascript:void(0);" class="iconUp" id ="iconU" onclick="clickDownBar()">
           <i class="fas fa-caret-up"></i>
         </a>
-        <a href="javascript:void(0);" id = "home" onclick="clickDownBar()">FAQ</a>
+        <a aria-label = "toggle navigation" href="javascript:void(0);" id = "home" onclick="clickDownBar()">FAQ</a>
       </div>
 
       <div class = "webnav">
-        <h1> buni ko</h1>
         <div id = "navlinksWeb">
-          <a href="index.html">Home</a>
-          <a href="product.html">Our Products</a>
-          <a href="story.html">Our Story</a>
-          <a href="faq.html" id = "homeWeb">FAQ</a>
+          <a aria-label = "home page" href="index.html">Home</a>
+          <a aria-label = "our products" href="product.html" >Our Products</a>
+          <a aria-label = "our story" href="story.html">Our Story</a>
+          <a aria-label = "frequently asked questions" href="faq.html" id = "homeWeb">FAQ</a>
         </div>
       </div>
 
