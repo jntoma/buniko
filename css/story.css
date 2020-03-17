@@ -153,12 +153,12 @@ p{
   text-align: center;
 }
 
-#divide1{
+.divide1{
   margin-top: 5%;
   width:80%;
 }
 
-#divide2{
+.divide2{
   margin-top: 5%;
   float: right;
   width:80%;
@@ -242,7 +242,7 @@ p{
     transition: 0.6s ease;
     border-radius: 3px 3px 3px 3px;
     user-select: none;
-    z-index; 90;
+    z-index: 90;
   }
 
   .next {
@@ -450,14 +450,14 @@ p{
     color: #7e0d51;
   }
 
-  .largeView h3{
+  .largeView h2{
 
     font-size: 5vw;
     margin-top: -15%;
     margin-bottom: 3%;
   }
 
-  .largeView h4{
+  .largeView h3{
     font-size: 2vw;
     color: #B94E55;
     font-style: italic;
@@ -488,6 +488,11 @@ p{
     /* Do an horizontal flip when you move the mouse over the flip box container */
     .flip-card:hover .flip-card-inner{
       transform: rotateX(180deg);
+    }
+
+    .flip-card-back h3{
+      color: white;
+      font-style: normal;
     }
 
     .flip-card:focus .flip-card-inner{
@@ -634,12 +639,12 @@ p{
     font-size: 30px;
   }
 
-  .largeView h3{
+  .largeView h2{
 
     font-size: 60px;
   }
 
-  .largeView h4{
+  .largeView h3{
     font-size: 18px;
   }
   .largeView p{

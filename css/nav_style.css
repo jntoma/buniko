@@ -237,7 +237,7 @@
     display: block;
   }
 
-  .webnav #navlinks{
+  .webnav #navlinksWeb{
     color: #7E0D51;
     z-index: 101;
     float: right;
@@ -259,12 +259,12 @@
     padding: 5px;
   }
 
-  .webnav #home{
+  .webnav #homeWeb{
     z-index: 101;
     text-decoration: none;
     border-bottom: 5px solid #B94E55;
     color: #B94E55;
-    font-style: bold;
+    font-weight: bold;
   }
 
   .webnav #home:hover{

@@ -24,19 +24,19 @@
     <title>buni ko</title>
   </head>
   <body>
-    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <div class="skip"><a aria-label = "skip to main content" href="#main">Skip to Main Content</a></div>
     <header>
       <div class = "mobnav">
         <div id = "navlinks">
-          <a href="index.html" id = "home">Home</a>
-          <a href="product.html">Our Products</a>
-          <a href="story.html">Our Story</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html" id = "contactHeader">Contact</a>
+          <a aria-label = "home page" href="index.html" >Home</a>
+          <a aria-label = "our products" href="product.html" >Our Products</a>
+          <a aria-label = "our story" href="story.html">Our Story</a>
+          <a aria-label = "frequently asked questions" href="faq.html">FAQ</a>
+          <a aria-label = "contact form" href="contact.html" id = "contactHeader">Contact</a>
         </div>
-        <a href="javascript:void(0);" class="icon" id ="icon2" onclick="clickNavBar()">
+        <a aria-label = "open navigation" href="javascript:void(0);" class="icon" id ="icon2" onclick="clickNavBar()">
           <i class="fa fa-bars"></i> </a>
-        <a href="javascript:void(0);" class="iconx" id ="iconx2" onclick="clickNavBar()">
+        <a aria-label = "close navigation" href="javascript:void(0);" class="iconx" id ="iconx2" onclick="clickNavBar()">
           <i class="fas fa-times"></i>
         </a>
       </div>
@@ -44,42 +44,42 @@
       <div class = "tabnav">
         <h1> buni ko</h1>
         <div id = "navlinkstab">
-          <a href="product.html">Our Products</a> <br />
-          <a href="story.html">Our Story</a> <br />
-          <a href="faq.html">FAQ</a> <br />
+          <a aria-label = "our products" href="product.html">Our Products</a> <br />
+          <a aria-label = "our story" href="story.html">Our Story</a> <br />
+          <a aria-label = "frequently asked questions" href="faq.html">FAQ</a> <br />
         </div>
 
-        <a href="javascript:void(0);" class="iconDown" id ="iconD" onclick="clickDownBar()">
+        <a aria-label = "open navigation" href="javascript:void(0);" class="iconDown" id ="iconD" onclick="clickDownBar()">
           <i class="fas fa-caret-down"></i> </a>
-        <a href="javascript:void(0);" class="iconUp" id ="iconU" onclick="clickDownBar()">
+        <a aria-label = "close navigation" href="javascript:void(0);" class="iconUp" id ="iconU" onclick="clickDownBar()">
           <i class="fas fa-caret-up"></i>
         </a>
-        <a href="javascript:void(0);" id = "home" onclick="clickDownBar()">Home</a>
+        <a aria-label = "toggle navigation" href="javascript:void(0);" id = "home" onclick="clickDownBar()">Home</a>
       </div>
 
       <div class = "webnav">
         <h1> buni ko</h1>
-        <div id = "navlinks">
-          <a href="index.html" id = "home">Home</a>
-          <a href="product.html">Our Products</a>
-          <a href="story.html">Our Story</a>
-          <a href="faq.html">FAQ</a>
+        <div id = "navlinksWeb">
+          <a aria-label = "home page" href="index.html" id = "homeWeb">Home</a>
+          <a aria-label = "our products" href="product.html">Our Products</a>
+          <a aria-label = "our story" href="story.html">Our Story</a>
+          <a aria-label = "frequently asked questions" href="faq.html">FAQ</a>
         </div>
       </div>
     </header>
 
     <main>
       <div class = "largeView">
-        <img id = "halfdivider" src = "images/halfdivider.png"/>
-        <img id = "halfdivider2" src = "images/halfdivider.png"/>
+        <img alt = "section divider" id = "halfdivider" src = "images/halfdivider.png"/>
+        <img alt = "section divider" id = "halfdivider2" src = "images/halfdivider.png"/>
         <video autoplay muted loop id="flowerVideo">
           <source src="videos/flowers.mp4" type="video/mp4">
         </video>
-        <a href="javascript:void(0);" class="play" id ="playb" onclick="playPause()">
-          <i class="fas fa-play"></i>
-        <a href="javascript:void(0);" class="pause" id ="pauseb" onclick="playPause()">
+        <a aria-label = "play background video" href="javascript:void(0);" class="play" id ="playb" onclick="playPause()">
+          <i class="fas fa-play"></i> </a>
+        <a aria-label = "pause background video" href="javascript:void(0);" class="pause" id ="pauseb" onclick="playPause()">
           <i class="fas fa-pause"></i> </a>
-          <img id = "dividerL" src = "images/divider2.png"/>
+          <img alt = "section divider" id = "dividerL" src = "images/divider2.png"/>
 
         <div class="content">
         <div class="content__container">
@@ -100,7 +100,7 @@
 
 
       <div class = "header" id = "main">
-        <img src = "images/frontpage.png"/>
+        <img alt = "a bottle of kombucha" src = "images/frontpage.png"/>
         <h1> buni ko </h1>
         <p id = "subtitle"> kombucha, with love. </p>
       </div>
@@ -111,10 +111,10 @@
 
       <div class = "newflav">
         <div class = "parallax"></div>
-        <img id = "graphic" src = "images/applegraphic.png"/>
+        <img alt = "a bottle of kombucha with an apply logo" id = "graphic" src = "images/applegraphic.png"/>
         <h2> meet our crisp new flavor </h2>
         <h3> apple </h3>
-        <img id = "divider" src = "images/divider.png"/>
+        <img alt = "section divider" id = "divider" src = "images/divider.png"/>
       </div>
 
 
@@ -122,9 +122,9 @@
 
       <div class = "mission">
         <h2> Our Mission </h2>
-        <span class = "framePara">
-          <img id = "frame" src = "images/frame.png"/>
-          <p> buni ko began out of a desire to spread the joy of healthy living. </p>
+        <div class = "framePara">
+          <img alt = "a purple frame" id = "frame" src = "images/frame.png"/>
+          <p>buni ko began out of a desire to spread the joy of healthy living. </p>
           <br /> <br />
           <p id = "smallerText">
             1. To make sure that kombucha can be enjoyed by everybody,
@@ -132,31 +132,31 @@
             2. We're dedicated to using fresh, locally sourced ingredients wherever possible to support
             our communities. </p>
 
-          <a href = "story.html" id = "learnMore">
+          <a aria-label = "our story" href = "story.html" id = "learnMore">
             <p > Learn more about our beginnings </p>
           </a>
 
-          <a href = "story.html" id = "learnMoreFlowers"><img id = "learnMoreFlowers"  src = "images/smallflower.png"/></a>
-           <a href = "story.html" id = "learnMoreArrow"><img id = "learnMoreArrow"  src = "images/rightarrow.png"/></a>
-        </span>
+          <a aria-label = "our story" href = "story.html" id = "learnMoreFlowersL"><img alt = "a tuft of flowers" id = "learnMoreFlowers"  src = "images/smallflower.png"/></a>
+           <a aria-label = "our story" href = "story.html" id = "learnMoreArrowL"><img alt = "an arrow pointing right" id = "learnMoreArrow"  src = "images/rightarrow.png"/></a>
+        </div>
       </div>
 
-      <a href="javascript:void(0);" class="upButton" id ="upButtonId" onclick="goUp()">
-        <img id = "up" src = "images/upbutton.png"/>
+      <a aria-label = "go back up to the top of the page" href="javascript:void(0);" class="upButton" id ="upButtonId" onclick="goUp()">
+        <img alt = "an arrow pointing up in a purple circle" id = "up" src = "images/upbutton.png"/>
       </a>
 
       <footer class = "footer">
 
         <div class = "footerMobile">
-          <img id = "footerImg" src = "images/footer.png"/>
+          <img alt = "purple waves" id = "footerImg" src = "images/footer.png"/>
           <div class = "footerGrid">
             <p id = "footerName"> buni ko </p>
             <p id = "footerCopyright"> © Jessica Toma, 2020 </p>
-            <a href="index.html" id = "homeFooter">Home</a>
-            <a href="product.html" id = "productsFooter">Products</a>
-            <a href="story.html" id = "storyFooter">Story</a>
-            <a href="faq.html" id = "faqFooter">FAQ</a>
-            <a href="contact.html" id = "contactFooter">Contact</a>
+            <a aria-label = "home page" href="index.html" id = "homeFooter">Home</a>
+            <a aria-label = "our products" href="product.html" id = "productsFooter">Products</a>
+            <a aria-label = "our story" href="story.html" id = "storyFooter">Story</a>
+            <a aria-label = "frequently asked questions" href="faq.html" id = "faqFooter">FAQ</a>
+            <a aria-label = "contact" href="contact.html" id = "contactFooter">Contact</a>
           </div>
         </div>
 
@@ -174,23 +174,19 @@
             <label for="email">Email</label>
             <input type="text" id="email" name="emailadd" placeholder="example@gmail.com">
 
-            <label for="email">Subject</label>
+            <label for="subject">Subject</label>
             <input type="text" id="subject" name="subjectl" placeholder="how can we help you?">
 
-            <label for="subject">Body</label>
+            <label for="body">Body</label>
             <textarea id="body" name="body" placeholder="you can give us more details here" style="height:200px"></textarea>
 
             <input type="submit" value="Submit">
 
           </form>
         </div>
-
-
-
-
-
+      </div>
       </footer>
-      <script type="text/javascript" src="js/navscroll.js"></script>
+      <script src="js/navscroll.js"></script>
     </main>
 
   </body>

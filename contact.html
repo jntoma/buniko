@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/nav_style.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d95e8cb781.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet"> -->
@@ -36,27 +36,24 @@
           <a href="faq.html">FAQ</a>
           <a href="contact.html" id = "cont">Contact</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="clickNavBar()">
-          <i class="fa fa-bars"></i>
-        </a>
-        <a href="javascript:void(0);" class="iconx" id ="iconx2" onclick="clickNavBar()">
-          <i class="fas fa-times"></i>
-        </a>
+        <a aria-label = "open navigation" href="javascript:void(0);" class="icon" id ="icon2" onclick="clickNavBar()">
+          <i alt = "open navigation" class="fa fa-bars"></i> </a>
+        <a aria-label = "close navigation" href="javascript:void(0);" class="iconx" id ="iconx2" onclick="clickNavBar()">
+          <i alt = "close navigation" class="fas fa-times"></i></a>
       </div>
 
       <div class = "tabnav">
         <h1> buni ko</h1>
         <div id = "navlinkstab">
-
           <a href="index.html">Home</a> <br />
           <a href="product.html">Our Products</a> <br />
           <a href="story.html">Our Story</a> <br />
           <a href="story.html">FAQ</a> <br />
         </div>
 
-        <a href="javascript:void(0);" class="iconDown" id ="iconD" onclick="clickDownBar()">
+        <a aria-label = "open navigation" href="javascript:void(0);" class="iconDown" id ="iconD" onclick="clickDownBar()">
           <i class="fas fa-caret-down"></i> </a>
-        <a href="javascript:void(0);" class="iconUp" id ="iconU" onclick="clickDownBar()">
+        <a aria-label = "close navigation" href="javascript:void(0);" class="iconUp" id ="iconU" onclick="clickDownBar()">
           <i class="fas fa-caret-up"></i>
         </a>
         <a href="javascript:void(0);" id = "home" onclick="clickDownBar()">Contact</a>
@@ -64,7 +61,7 @@
 
       <div class = "webnav">
         <h1> buni ko</h1>
-        <div id = "navlinks">
+        <div id = "navlinksWeb">
           <a href="index.html">Home</a>
           <a href="product.html">Our Products</a>
           <a href="story.html">Our Story</a>
@@ -79,7 +76,7 @@
 
       <h2> Contact Form </h2>
 
-      <img id = "divider1" src = "images/divider2.png" />
+      <img alt = "section divider" id = "divider1" src = "images/divider2.png" />
 
       <div class="container">
       <form action="https://formspree.io/mbjkoogy" method = "POST">
@@ -93,10 +90,10 @@
         <label for="email">Email</label>
         <input type="text" id="email" name="emailadd" placeholder="example@gmail.com">
 
-        <label for="email">Subject</label>
+        <label for="subject">Subject</label>
         <input type="text" id="subject" name="subjectl" placeholder="how can we help you?">
 
-        <label for="subject">Body</label>
+        <label for="body">Body</label>
         <textarea id="body" name="body" placeholder="you can give us more details here" style="height:200px"></textarea>
 
         <input type="submit" value="Submit">
@@ -104,27 +101,27 @@
       </form>
 
     </div>
-    <img id = "divider2" src = "images/divider2.png" />
+    <img alt = "section divider" id = "divider2" src = "images/divider2.png" />
 
       <a href="javascript:void(0);" class="upButton" id ="upButtonId" onclick="goUp()">
-        <img id = "up" src = "images/upbutton.png"/>
+        <img alt = "an arrow pointing up in a purple circle" id = "up" src = "images/upbutton.png"/>
       </a>
 
       <footer class = "footer">
-        <img id = "footerImg" src = "images/footer.png"/>
+        <img alt = "purple waves" id = "footerImg" src = "images/footer.png"/>
         <div class = "footerGrid">
           <p id = "footerName"> buni ko </p>
           <p id = "footerCopyright"> © Jessica Toma, 2020 </p>
-          <a href="index.html" id = "homeFooter">Home</a>
-          <a href="product.html" id = "productsFooter">Products</a>
-          <a href="story.html" id = "storyFooter">Story</a>
-          <a href="faq.html" id = "faqFooter">FAQ</a>
-          <a href="contact.html" id = "contactFooter">Contact</a>
+          <a aria-label = "home page" href="index.html" id = "homeFooter">Home</a>
+          <a aria-label = "our products" href="product.html" id = "productsFooter">Products</a>
+          <a aria-label = "our story" href="story.html" id = "storyFooter">Story</a>
+          <a aria-label = "frequently asked questions" href="faq.html" id = "faqFooter">FAQ</a>
+          <a aria-label = "contact" href="contact.html" id = "contactFooter">Contact</a>
         </div>
       </footer>
 
     </main>
 
-    <script type="text/javascript" src="js/navscroll.js"></script>
+    <script src="js/navscroll.js"></script>
   </body>
   </html>

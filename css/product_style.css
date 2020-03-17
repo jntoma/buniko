@@ -42,7 +42,7 @@ img {
   margin-top: -5%;
 }
 
-#divider3 {
+.divider3 {
   position: relative;
   z-index:90;
   margin-top: -8%;
@@ -56,19 +56,19 @@ img {
   grid-template-rows: 25% 25% 25% 25%;
 }
 
-.apple #flavsign, .ginger #flavsign,  .strawb #flavsign,
-.blackb #flavsign , .blueb #flavsign, .lemon #flavsign,
-.rasp #flavsign , .mango #flavsign , .peach #flavsign{
+.apple .flavSign, .ginger .flavSign,  .strawb .flavSign,
+.blackb .flavSign , .blueb .flavSign, .lemon .flavSign,
+.rasp .flavSign , .mango .flavSign , .peach .flavSign{
   z-index: 10;
   grid-row: 3;
   grid-column: 1 / -1;
 }
 
-.apple #title, .ginger #title,  .strawb #title,
-.blackb #title , .blueb #title, .lemon #title,
-.rasp #title , .mango #title , .peach #title {
+.apple .title, .ginger .title,  .strawb .title,
+.blackb .title , .blueb .title, .lemon .title,
+.rasp .title , .mango .title , .peach .title {
   text-align: center;
-  font-style: bold;
+  font-weight: bold;
   margin-top: 5%;
   font-size: 12vw;
   color: #7E0D51;
@@ -77,16 +77,16 @@ img {
   grid-column: 1 / -1;
 }
 
-.apple #subtitle, .ginger #subtitle,  .strawb #subtitle,
-.blackb #subtitle , .blueb #subtitle, .lemon #subtitle,
-.rasp #subtitle , .mango #subtitle , .peach #subtitle   {
+.apple .subtitle, .ginger .subtitle,  .strawb .subtitle,
+.blackb .subtitle , .blueb .subtitle, .lemon .subtitle,
+.rasp .subtitle , .mango .subtitle , .peach .subtitle   {
   font-size: 5vw;
 }
 
 .apple #more, .ginger #more,  .strawb #more,
 .blackb #more , .blueb #more, .lemon #more,
 .rasp #more , .mango #more , .peach #more {
-  font-style: bold;
+  font-weight: bold;
   color: white;
   z-index: 90;
   font-size: 5vw;
@@ -336,7 +336,7 @@ img {
   grid-column: 2;
   grid-row: 2;
   color: #7E0D51;
-  font-style: bold;
+  font-weight: bold;
   text-align: center;
   font-size: 4vw;
 }
@@ -374,7 +374,12 @@ img {
 }
 
 @media screen and (min-width: 720px){
-  .intro, #divider, #divider2, #divider3,
+
+  h2{
+    display: none;
+  }
+
+  .intro, #divider, #divider2, .divider3,
   #divider4, #divider5, #divider6,
   #divider7, #divider8, #divider9, .containerFlav{
     display: none;
@@ -422,7 +427,7 @@ img {
     display: none;
   }
 
-  #dividerL, #gingDividerL{
+  .dividerL, #gingDividerL{
     position: relative;
     z-index: 99;
     height:150px;

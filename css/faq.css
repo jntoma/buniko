@@ -87,19 +87,24 @@ h3 {
 
 p{
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   margin-bottom: 5%;
   margin-left: 6%;
   font-size: 3vw;
+  line-height: 30px;
 }
 
-#divider{
+#answers {
+  line-height:60px;
+}
+
+.divider{
   width:100%;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-#divider2{
+.divider2{
   width:100%;
 }
 
@@ -116,4 +121,41 @@ p{
 #upButtonId img{
   width: 60px;
   height: 60px;
+}
+
+@media screen and (min-width: 1024px){
+
+  #frame, #questions, #answers {
+    display: none;
+  }
+
+  #flower {
+    position: absolute;
+    grid-row: 3;
+    grid-column: 2;
+    height: 400px;
+    display: inline-block;
+    margin:auto;
+    /* margin-top: 65%; */
+  }
+
+  .first {
+    margin-top: 500px;
+  }
+
+  h3 {
+    position: relative;
+    font-size: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 3%;
+    line-height: 60px;
+
+  }
+  p {
+    font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 30px;
+  }
 }

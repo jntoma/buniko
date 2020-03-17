@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/nav_style.css">
     <link rel="stylesheet" type="text/css" href="css/story.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d95e8cb781.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet"> -->
@@ -25,18 +25,21 @@
   </head>
   <body>
     <header>
-      <div class="skip"><a href="#map">Skip to Main Content</a></div>
+      <div class="skip"><a aria-label = "skip to main content" href="#map">Skip to Main Content</a></div>
       <div class = "mobnav">
-         <a href = "index.html"><h1> buni ko </h1></a>
+         <a aria-label = "home page" href = "index.html"><h1> buni ko </h1></a>
         <div id = "navlinks">
-          <a href="index.html" >Home</a>
-          <a href="product.html" >Our Products</a>
-          <a href="story.html" id = "story">Our Story</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
+          <a aria-label = "home page" href="index.html" >Home</a>
+          <a aria-label = "our products" href="product.html" >Our Products</a>
+          <a aria-label = "our story" href="story.html" id = "story">Our Story</a>
+          <a aria-label = "frequently asked questions" href="faq.html">FAQ</a>
+          <a aria-label = "contact form" href="contact.html">Contact</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="clickNavBar()">
+        <a aria-label = "open navigation" href="javascript:void(0);" class="icon" onclick="clickNavBar()">
           <i class="fa fa-bars"></i>
+        </a>
+        <a aria-label = "close navigation" href="javascript:void(0);" class="iconx" id ="iconx2" onclick="clickNavBar()">
+          <i class="fas fa-times"></i>
         </a>
       </div>
 
@@ -44,42 +47,42 @@
         <h1> buni ko</h1>
         <div id = "navlinkstab">
 
-          <a href="index.html">Home</a> <br />
-          <a href="product.html">Our Products</a> <br />
-          <a href="faq.html">FAQ</a> <br />
+          <a aria-label = "home page" href="index.html">Home</a> <br />
+          <a aria-label = "our products" href="product.html">Our Products</a> <br />
+          <a aria-label = "frequently asked questions" href="faq.html">FAQ</a> <br />
         </div>
 
-        <a href="javascript:void(0);" class="iconDown" id ="iconD" onclick="clickDownBar()">
+        <a aria-label = "open navigation" href="javascript:void(0);" class="iconDown" id ="iconD" onclick="clickDownBar()">
           <i class="fas fa-caret-down"></i> </a>
-        <a href="javascript:void(0);" class="iconUp" id ="iconU" onclick="clickDownBar()">
+        <a aria-label = "close navigation" href="javascript:void(0);" class="iconUp" id ="iconU" onclick="clickDownBar()">
           <i class="fas fa-caret-up"></i>
         </a>
-        <a href="javascript:void(0);" id = "home" onclick="clickDownBar()">Our Story</a>
+        <a aria-label = "toggle navigation" href="javascript:void(0);" id = "home" onclick="clickDownBar()">Our Story</a>
       </div>
 
       <div class = "webnav">
         <h1> buni ko</h1>
-        <div id = "navlinks">
-          <a href="index.html" >Home</a>
-          <a href="product.html">Our Products</a>
-          <a href="story.html" id = "home">Our Story</a>
-          <a href="faq.html" >FAQ</a>
+        <div id = "navlinksWeb">
+          <a aria-label = "home page" href="index.html" >Home</a>
+          <a aria-label = "our products" href="product.html">Our Products</a>
+          <a aria-label = "our story" href="story.html" id = "homeWeb">Our Story</a>
+          <a aria-label = "frequently asked questions" href="faq.html" >FAQ</a>
         </div>
       </div>
 
     </header>
     <main>
-      <class id = head>
+      <div class = "head">
         <h2> Our Story </h2>
-      </class>
+      </div>
       <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
-        <img class = "frames" id = "frame" src="images/framehoriz.png">
+        <img alt = "frame" class = "frames" id = "frame" src="images/framehoriz.png">
         <div class="mySlides fade">
           <!-- <img class = "frames" id = "frame" src="images/framehoriz.png"> -->
           <div class = "firstSlide">
-            <img id = "mapLarge" src="images/map.png">
-            <img id = "mapPokeLarge" src="images/mappoke.png">
+            <img alt = "a map of romania" id = "mapLarge" src="images/map.png">
+            <img alt = "a map of romania with an indicator of the city of Alba Iulia" id = "mapPokeLarge" src="images/mappoke.png">
             <div class="text" id = "text1">The story of buni ko begins in Romania where Crina,
               the founder of buni ko, was born.</div>
           </div>
@@ -88,8 +91,8 @@
         <div class="mySlides fade">
           <!-- <img class = "frames" id = "frame" src="images/framehoriz.png"> -->
           <div class = "secondSlide">
-            <img id = "liliesLarge" src="images/lilies1.png">
-            <img id = "lilies2Large" src="images/lilies2.png">
+            <img alt = "hand-drawn lilies" id = "liliesLarge" src="images/lilies1.png">
+            <img alt = "hand-drawn lilies altered slightly" id = "lilies2Large" src="images/lilies2.png">
             <div class="text" id = "text2">She was named for the lilies in the garden</div>
             <div class="text" id = "text22">of her childhood home.</div>
           </div>
@@ -98,7 +101,7 @@
         <div class="mySlides fade">
           <!-- <img class = "frames" id = "frame" src="images/framehoriz.png"> -->
           <div class = "thirdSlide">
-            <img id = "planeLarge" src="images/plane.png">
+            <img alt = "hand-drawn plane" id = "planeLarge" src="images/plane.png">
             <div class="text" id = "text3"> Crina carried a love for nature, even when she moved
             to the less wild suburbs of Michigan.</div>
           </div>
@@ -107,8 +110,8 @@
         <div class="mySlides fade">
           <!-- <img class = "frames" id = "frame" src="images/framehoriz.png"> -->
           <div class = "fourthSlide">
-            <img id = "emptyLarge" src="images/empty.png">
-            <img id = "fullgrownLarge" src="images/fullgrown.png">
+            <img alt = "an empty tomato pot" id = "emptyLarge" src="images/empty.png">
+            <img alt = "a full grown tomato plant" id = "fullgrownLarge" src="images/fullgrown.png">
             <div class="text" id = "text4">She brought seeds to life and helped flowers bloom.
             She started making kombucha for herself in 2017 as she brought more nature
           into her home.</div>
@@ -118,7 +121,7 @@
         <div class="mySlides fade">
           <!-- <img class = "frames" id = "frame" src="images/framehoriz.png"> -->
           <div class = "fifthSlide">
-            <img id = "kombuchaLarge" src="images/kombucha.png">
+            <img alt = "three jars of kombucha" id = "kombuchaLarge" src="images/kombucha.png">
             <div class="text" id = "text5">But nature gives to all, she thought, and so should she. So in 2020,
               she began buni ko to share her love for the earth with others.</div>
           </div>
@@ -140,8 +143,8 @@
       </div>
 
       <div class = "largeView">
-        <h3> the story of buni ko</h3>
-        <h4> the slides above have been reproduced below for those who do not prefer slideshows</h4>
+        <h2> the story of buni ko</h2>
+        <h3> the slides above have been reproduced below for those who do not prefer slideshows</h3>
         <p> The story of buni ko begins in Romania where Crina,
           the founder of buni ko, was born. <br /> <br />
           She was named for the lilies in the garden of her childhood home. <br /> <br />
@@ -172,41 +175,41 @@
 
 
       <div class = "container-mob">
-        <img id = "map" src = "images/map.png">
-        <img id = "mappoke" src = "images/mappoke.png">
+        <img alt = "a map of romania" id = "map" src = "images/map.png">
+        <img alt = "a map of romania with an indicator for the city of Alba iulia" id = "mappoke" src = "images/mappoke.png">
         <p id = "firstt"> The story of buni ko begins in Romania where Crina,
           the founder of buni ko, was born.</p>
-          <img id = "divide1" src = "images/halfdivider.png">
+          <img alt = "section divider" class = "divide1" src = "images/halfdivider.png">
 
         <div class = "home">
-          <img id = "lilies1" src = "images/lilies1.png">
-          <img id = "lilies2" src = "images/lilies2.png" />
+          <img alt = "hand-drawn lilies" id = "lilies1" src = "images/lilies1.png">
+          <img alt = "hand-drawn lilies moved slightly" id = "lilies2" src = "images/lilies2.png" />
           <p id = "secondt1">She was named for the lilies in the garden </p>
 
           <p id = "secondt2"> of her childhood home. </p>
         </div>
-        <img id = "divide2" src = "images/halfdivider.png">
+        <img alt = "section divider" class = "divide2" src = "images/halfdivider.png">
 
 
         <div class = "travel">
-          <img id = "plane" src = "images/plane.png">
+          <img alt = "hand-drawn plane" id = "plane" src = "images/plane.png">
           <p id = "thirdt"> Crina carried a love for nature, even when she moved
           to the less wild suburbs of Michigan.</p>
         </div>
-        <img id = "divide1" src = "images/halfdivider.png">
+        <img alt = "section divider" class = "divide1" src = "images/halfdivider.png">
 
         <div class = "garden">
-          <img id = "empty" src = "images/empty.png">
-          <img id = "fullgrown" src = "images/fullgrown.png">
+          <img alt = "an empty tomato pot" id = "empty" src = "images/empty.png">
+          <img alt = "a full grown tomato plant" id = "fullgrown" src = "images/fullgrown.png">
           <p id = "fourtht"> She brought seeds to life and helped flowers bloom.
           She started making kombucha for herself in 2017 as she brought more nature
         into her home. </p>
         </div>
 
-        <img id = "divide2" src = "images/halfdivider.png">
+        <img alt = "section divider" class = "divide2" src = "images/halfdivider.png">
 
         <div class = "kombucha">
-          <img id = "kombucha" src = "images/kombucha.png">
+          <img alt = "three jars of kombucha" id = "kombucha" src = "images/kombucha.png">
           <p id = "fiftht"> But nature gives to all, she thought, and so should she. So in 2020,
             she began buni ko to share her love for the earth with others.</p>
         </div>
@@ -214,20 +217,20 @@
 
       </div>
 
-      <a href="javascript:void(0);" class="upButton" id ="upButtonId" onclick="goUp()">
-        <img id = "up" src = "images/upbutton.png"/>
+      <a aria-label = "go back to top of the page" href="javascript:void(0);" class="upButton" id ="upButtonId" onclick="goUp()">
+        <img alt = "an arrow point up in a purple circle" id = "up" src = "images/upbutton.png"/>
       </a>
 
       <footer class = "footer">
-        <img id = "footerImg" src = "images/footer.png"/>
+        <img alt = "purple waves" id = "footerImg" src = "images/footer.png"/>
         <div class = "footerGrid">
           <p id = "footerName"> buni ko </p>
           <p id = "footerCopyright"> © Jessica Toma, 2020 </p>
-          <a href="index.html" id = "homeFooter">Home</a>
-          <a href="product.html" id = "productsFooter">Products</a>
-          <a href="story.html" id = "storyFooter">Story</a>
-          <a href="faq.html" id = "faqFooter">FAQ</a>
-          <a href="contact.html" id = "contactFooter">Contact</a>
+          <a aria-label = "home page" href="index.html" id = "homeFooter">Home</a>
+          <a aria-label = "our products" href="product.html" id = "productsFooter">Products</a>
+          <a aria-label = "our story" href="story.html" id = "storyFooter">Story</a>
+          <a aria-label = "frequently asked questions" href="faq.html" id = "faqFooter">FAQ</a>
+          <a aria-label = "contact" href="contact.html" id = "contactFooter">Contact</a>
         </div>
 
         <div class = "footerLarge">
@@ -244,20 +247,21 @@
             <label for="email">Email</label>
             <input type="text" id="email" name="emailadd" placeholder="example@gmail.com">
 
-            <label for="email">Subject</label>
+            <label for="subject">Subject</label>
             <input type="text" id="subject" name="subjectl" placeholder="how can we help you?">
 
-            <label for="subject">Body</label>
+            <label for="body">Body</label>
             <textarea id="body" name="body" placeholder="you can give us more details here" style="height:200px"></textarea>
 
             <input type="submit" value="Submit">
 
           </form>
         </div>
+      </div>
       </footer>
     </main>
 
-    <script type="text/javascript" src="js/navscroll.js"></script>
+    <script src="js/navscroll.js"></script>
   </body>
 
 </html>

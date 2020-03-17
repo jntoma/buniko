@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/nav_style.css">
     <link rel="stylesheet" type="text/css" href="css/product_style.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d95e8cb781.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet"> -->
@@ -25,21 +25,21 @@
   </head>
   <body>
     <header>
-      <div class="skip"><a href="#intro">Skip to Main Content</a></div>
-        <a href = "index.html"><h1> buni ko </h1></a>
+      <div class="skip"><a aria-label = "skip to main content" href="#intro">Skip to Main Content</a></div>
+      <a aria-label = "home page" href = "index.html"><h1> buni ko </h1></a>
 
       <div class = "mobnav">
         <div id = "navlinks">
-          <a href="index.html" >Home</a>
-          <a href="product.html" id = "prod">Our Products</a>
-          <a href="story.html">Our Story</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
+          <a aria-label = "home page" href="index.html" >Home</a>
+          <a aria-label = "our products" href="product.html" id = "prod">Our Products</a>
+          <a aria-label = "our story" href="story.html">Our Story</a>
+          <a aria-label = "frequently asked questions" href="faq.html">FAQ</a>
+          <a aria-label = "contact form" href="contact.html">Contact</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="clickNavBar()">
+        <a aria-label = "open navigation" href="javascript:void(0);" class="icon" onclick="clickNavBar()">
           <i class="fa fa-bars"></i>
         </a>
-        <a href="javascript:void(0);" class="iconx" id ="iconx2" onclick="clickNavBar()">
+        <a aria-label = "close navigation" href="javascript:void(0);" class="iconx" id ="iconx2" onclick="clickNavBar()">
           <i class="fas fa-times"></i>
         </a>
       </div>
@@ -47,26 +47,26 @@
       <div class = "tabnav">
         <div id = "navlinkstab">
 
-          <a href="index.html">Home</a> <br />
+          <a aria-label = "home page" href="index.html">Home</a> <br />
 
-          <a href="story.html">Our Story</a> <br />
-          <a href="faq.html">FAQ</a> <br />
+          <a aria-label = "our story" href="story.html">Our Story</a> <br />
+          <a aria-label = "frequently asked questions" href="faq.html">FAQ</a> <br />
         </div>
 
-        <a href="javascript:void(0);" class="iconDown" id ="iconD" onclick="clickDownBar()">
+        <a aria-label = "open navigation" href="javascript:void(0);" class="iconDown" id ="iconD" onclick="clickDownBar()">
           <i class="fas fa-caret-down"></i> </a>
-        <a href="javascript:void(0);" class="iconUp" id ="iconU" onclick="clickDownBar()">
+        <a aria-label = "close navigation" href="javascript:void(0);" class="iconUp" id ="iconU" onclick="clickDownBar()">
           <i class="fas fa-caret-up"></i>
         </a>
-        <a href="javascript:void(0);" id = "home" onclick="clickDownBar()">Our Products</a>
+        <a aria-label = "toggle navigation" href="javascript:void(0);" id = "home" onclick="clickDownBar()">Our Products</a>
       </div>
 
       <div class = "webnav">
-        <div id = "navlinks">
-          <a href="index.html">Home</a>
-          <a href="product.html" id = "home">Our Products</a>
-          <a href="story.html">Our Story</a>
-          <a href="faq.html">FAQ</a>
+        <div id = "navlinksWeb">
+          <a aria-label = "home page" href="index.html">Home</a>
+          <a aria-label = "our products" href="product.html" id = "homeWeb">Our Products</a>
+          <a aria-label = "our story" href="story.html">Our Story</a>
+          <a aria-label = "frequently asked questions" href="faq.html">FAQ</a>
         </div>
       </div>
 
@@ -78,156 +78,156 @@
       <h2> Our Products </h2>
 
       <div class = "largeView">
-        <img id = "halfdivider" src = "images/halfdivider.png"/>
-        <img id = "halfdivider2" src = "images/halfdivider.png"/>
+        <img alt = "section divider" id = "halfdivider" src = "images/halfdivider.png"/>
+        <img alt = "section divider" id = "halfdivider2" src = "images/halfdivider.png"/>
 
         <div class="row">
           <div class="column">
             <div class="overlay">
               <div class="text">apple, our crisp new flavor</div>
             </div>
-              <img id = "flaImg" src="images/orchard.jpg">
-              <img id = "dividerL" src = "images/divider2.png"/>
+              <img alt = "an apple orchard" id = "flaImg" src="images/orchard.jpg">
+              <img alt = "section divider" class = "dividerL" src = "images/divider2.png"/>
               <div class="overlay">
                 <div class="text">strawberry, a taste of home</div>
               </div>
-              <img src="images/strawb.jpg">
+              <img alt = "a close-up of many strawberries" src="images/strawb.jpg">
 
-              <img id = "dividerL" src = "images/divider2.png"/>
+              <img alt = "section divider" class = "dividerL" src = "images/divider2.png"/>
 
           </div>
           <div class="column">
             <div class="overlay">
               <div class="text">mango, a tropical treat </div>
             </div>
-            <img src="images/mango.jpg">
-            <img id = "dividerL" src = "images/divider2.png"/>
+            <img alt = "many mangoes laid out on a surface" src="images/mango.jpg">
+            <img alt = "section divider" class = "dividerL" src = "images/divider2.png"/>
             <div class="overlay">
               <div class="text">lemon, a soothing mix</div>
             </div>
-            <img src="images/lemon.jpg">
-            <img id = "dividerL" src = "images/divider2.png"/>
+            <img alt = "a close-up of a lemon tree" src="images/lemon.jpg">
+            <img alt = "section divider" class = "dividerL" src = "images/divider2.png"/>
             <div id = "gingT" class="overlay">
               <div class="text">ginger, our original</div>
             </div>
-            <img src="images/ginger.jpg">
-            <img id = "gingDividerL" src = "images/divider2.png"/>
+            <img alt = "ginger root lying on a table" src="images/ginger.jpg">
+            <img alt = "section divider" id = "gingDividerL" src = "images/divider2.png"/>
 
           </div>
           <div class="column">
             <div id = "bluebT" class="overlay">
               <div  class="text">blueberry, a refreshing twist</div>
             </div>
-            <img id = "bluebG" src="images/blueb.jpg">
-            <img id = "dividerL" src = "images/divider2.png"/>
+            <img alt = "section divider" id = "bluebG" src="images/blueb.jpg">
+            <img alt = "section divider" class = "dividerL" src = "images/divider2.png"/>
             <div class="overlay">
               <div class="text">blackberry, tall, dark, and handsome</div>
             </div>
-            <img src="images/blackb.jpg">
-            <img id = "dividerL" src = "images/divider2.png"/>
+            <img alt = "a blackberry bush" src="images/blackb.jpg">
+            <img alt = "section divider" class = "dividerL" src = "images/divider2.png"/>
           </div>
 
           <div class="column">
             <div class="overlay">
               <div class="text">peach, a taste of summer</div>
             </div>
-            <img src="images/peach.jpg">
-            <img id = "dividerL" src = "images/divider2.png"/>
+            <img alt = "a close-up of peaches on a tree" src="images/peach.jpg">
+            <img alt = "section divider" class = "dividerL" src = "images/divider2.png"/>
             <div class="overlay">
               <div class="text">raspberry, our favorite</div>
             </div>
-            <img src="images/rasp.jpg">
-            <img id = "raspDividerL" src = "images/divider2.png"/>
+            <img alt = "a close-up of a raspberry lying on top of other raspberries" src="images/rasp.jpg">
+            <img alt = "section divider" id = "raspDividerL" src = "images/divider2.png"/>
 
           </div>
         </div>
         </div>
 
       <div class = "intro" id = "intro">
-        <img id = "sign" src = "images/sign.png"/>
+        <img alt = "a hand-drawn white background" id = "sign" src = "images/sign.png"/>
         <p id = "introtext"> We've worked hard to create these nine wonderful flavors for you! <br /> <br />
         Enjoy! </p>
       </div>
-      <img id = "divider2" src = "images/divider2.png"/>
+      <img alt = "section divider" id = "divider2" src = "images/divider2.png"/>
       <div class = "containerFlav">
         <div class = "apple">
           <div class = "flavPicApple"></div>
-          <img id = "flavsign" src = "images/flavsign.png"/>
-          <p id = "title"> apple <br /> <span id = "subtitle"> our crisp new flavor </span>  </p>
-          <p id = "more"> learn more </p>
+          <img alt = "a hand-drawn white box" class = "flavSign" src = "images/flavsign.png"/>
+          <p class = "title"> apple <br /> <span class = "subtitle"> our crisp new flavor </span>  </p>
+
         </div>
-        <img id = "divider3" src = "images/divider2.png"/>
+        <img alt = "section divider" class = "divider3" src = "images/divider2.png"/>
         <div class = "ginger">
           <div class = "flavPicGinger"></div>
-          <img id = "flavsign" src = "images/flavsign.png"/>
-          <p id = "title"> ginger <br /> <span id = "subtitle"> our tried & true original </span>  </p>
-          <p id = "more"> learn more </p>
+          <img alt = "a hand-drawn white box" class = "flavSign" src = "images/flavsign.png"/>
+          <p class = "title"> ginger <br /> <span class = "subtitle"> our tried & true original </span>  </p>
+
         </div>
-        <img id = "divider3" src = "images/divider2.png"/>
+        <img alt = "section divider" class = "divider3" src = "images/divider2.png"/>
         <div class = "strawb">
           <div class = "flavPicStrawb"></div>
-          <img id = "flavsign" src = "images/flavsign.png"/>
-          <p id = "title"> strawberry <br /> <span id = "subtitle"> a sweet taste of home </span>  </p>
-          <p id = "more"> learn more </p>
+          <img alt = "a hand-drawn white box" class = "flavSign" src = "images/flavsign.png"/>
+          <p class = "title"> strawberry <br /> <span class = "subtitle"> a sweet taste of home </span>  </p>
+
         </div>
-        <img id = "divider3" src = "images/divider2.png"/>
+        <img alt = "section divider" class = "divider3" src = "images/divider2.png"/>
         <div class = "blackb">
           <div class = "flavPicBlackb"></div>
-          <img id = "flavsign" src = "images/flavsign.png"/>
-          <p id = "title"> blackberry <br /> <span id = "subtitle"> tall, dark, and handsome </span>  </p>
-          <p id = "more"> learn more </p>
+          <img alt = "a hand-drawn white box" class = "flavSign" src = "images/flavsign.png"/>
+          <p class = "title"> blackberry <br /> <span class = "subtitle"> tall, dark, and handsome </span>  </p>
+
         </div>
-        <img id = "divider3" src = "images/divider2.png"/>
+        <img alt = "section divider" class = "divider3" src = "images/divider2.png"/>
         <div class = "blueb">
           <div class = "flavPicBlueb"></div>
-          <img id = "flavsign" src = "images/flavsign.png"/>
-          <p id = "title"> blueberry <br /> <span id = "subtitle"> a refreshing twist </span>  </p>
-          <p id = "more"> learn more </p>
+          <img alt = "a hand-drawn white box" class = "flavSign" src = "images/flavsign.png"/>
+          <p class = "title"> blueberry <br /> <span class = "subtitle"> a refreshing twist </span>  </p>
+
         </div>
-        <img id = "divider3" src = "images/divider2.png"/>
+        <img alt = "section divider" class = "divider3" src = "images/divider2.png"/>
         <div class = "lemon">
           <div class = "flavPicLemon"></div>
-          <img id = "flavsign" src = "images/flavsign.png"/>
-          <p id = "title"> lemon <br /> <span id = "subtitle"> a soothing mix </span>  </p>
-          <p id = "more"> learn more </p>
+          <img alt = "a hand-drawn white box" class = "flavSign" src = "images/flavsign.png"/>
+          <p class = "title"> lemon <br /> <span class = "subtitle"> a soothing mix </span>  </p>
+
         </div>
-        <img id = "divider3" src = "images/divider2.png"/>
+        <img alt = "section divider" class = "divider3" src = "images/divider2.png"/>
         <div class = "rasp">
           <div class = "flavPicRasp"></div>
-          <img id = "flavsign" src = "images/flavsign.png"/>
-          <p id = "title"> raspberry <br /> <span id = "subtitle"> our favorite so far </span>  </p>
-          <p id = "more"> learn more </p>
+          <img alt = "a hand-drawn white box" class = "flavSign" src = "images/flavsign.png"/>
+          <p class = "title"> raspberry <br /> <span class = "subtitle"> our favorite so far </span>  </p>
+
         </div>
-        <img id = "divider3" src = "images/divider2.png"/>
+        <img alt = "section divider" class = "divider3" src = "images/divider2.png"/>
         <div class = "mango">
           <div class = "flavPicMango"></div>
-          <img id = "flavsign" src = "images/flavsign.png"/>
-          <p id = "title"> mango <br /> <span id = "subtitle"> a tropical delight </span>  </p>
-          <p id = "more"> learn more </p>
+          <img alt = "a hand-drawn white box" class = "flavSign" src = "images/flavsign.png"/>
+          <p class = "title"> mango <br /> <span class = "subtitle"> a tropical delight </span>  </p>
+
         </div>
-        <img id = "divider3" src = "images/divider2.png"/>
+        <img alt = "section divider" class = "divider3" src = "images/divider2.png"/>
         <div class = "peach">
           <div class = "flavPicPeach"></div>
-          <img id = "flavsign" src = "images/flavsign.png"/>
-          <p id = "title"> peach <br /> <span id = "subtitle"> a taste of summer </span>  </p>
-          <p id = "more"> learn more </p>
+          <img alt = "a hand-drawn white box" class = "flavSign" src = "images/flavsign.png"/>
+          <p class = "title"> peach <br /> <span class = "subtitle"> a taste of summer </span>  </p>
+
         </div>
       </div>
 
-      <a href="javascript:void(0);" class="upButton" id ="upButtonId" onclick="goUp()">
-        <img id = "up" src = "images/upbutton.png"/>
+      <a aria-label = "scroll back up to the top of page" href="javascript:void(0);" class="upButton" id ="upButtonId" onclick="goUp()">
+        <img alt = "an arrow point up in a purple circle" id = "up" src = "images/upbutton.png"/>
       </a>
 
       <footer class = "footer">
-        <img id = "footerImg" src = "images/footer.png"/>
+        <img alt = "purple waves" id = "footerImg" src = "images/footer.png"/>
         <div class = "footerGrid">
           <p id = "footerName"> buni ko </p>
           <p id = "footerCopyright"> © Jessica Toma, 2020 </p>
-          <a href="index.html" id = "homeFooter">Home</a>
-          <a href="product.html" id = "productsFooter">Products</a>
-          <a href="story.html" id = "storyFooter">Story</a>
-          <a href="faq.html" id = "faqFooter">FAQ</a>
-          <a href="contact.html" id = "contactFooter">Contact</a>
+          <a aria-label = "home page" href="index.html" id = "homeFooter">Home</a>
+          <a aria-label = "our products" href="product.html" id = "productsFooter">Products</a>
+          <a aria-label = "our story" href="story.html" id = "storyFooter">Story</a>
+          <a aria-label = "frequently asked questions" href="faq.html" id = "faqFooter">FAQ</a>
+          <a aria-label = "contact" href="contact.html" id = "contactFooter">Contact</a>
         </div>
 
         <div class = "footerLarge">
@@ -244,20 +244,21 @@
             <label for="email">Email</label>
             <input type="text" id="email" name="emailadd" placeholder="example@gmail.com">
 
-            <label for="email">Subject</label>
+            <label for="subject">Subject</label>
             <input type="text" id="subject" name="subjectl" placeholder="how can we help you?">
 
-            <label for="subject">Body</label>
+            <label for="body">Body</label>
             <textarea id="body" name="body" placeholder="you can give us more details here" style="height:200px"></textarea>
 
             <input type="submit" value="Submit">
 
           </form>
         </div>
+      </div>
       </footer>
 
     </main>
 
-    <script type="text/javascript" src="js/navscroll.js"></script>
+    <script src="js/navscroll.js"></script>
   </body>
   </html>

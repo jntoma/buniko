@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/nav_style.css">
     <link rel="stylesheet" type="text/css" href="css/faq.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d95e8cb781.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet"> -->
@@ -35,10 +35,9 @@
           <a href="faq.html" id = "faq">FAQ</a>
           <a href="contact.html">Contact</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="clickNavBar()">
-          <i class="fa fa-bars"></i>
-        </a>
-        <a href="javascript:void(0);" class="iconx" id ="iconx2" onclick="clickNavBar()">
+        <a aria-label = "open navigation" href="javascript:void(0);" class="icon" id ="icon2" onclick="clickNavBar()">
+          <i class="fa fa-bars"></i> </a>
+        <a aria-label = "close navigation" href="javascript:void(0);" class="iconx" id ="iconx2" onclick="clickNavBar()">
           <i class="fas fa-times"></i>
         </a>
       </div>
@@ -52,9 +51,9 @@
           <a href="story.html">Our Story</a> <br />
         </div>
 
-        <a href="javascript:void(0);" class="iconDown" id ="iconD" onclick="clickDownBar()">
+        <a aria-label = "open navigation" href="javascript:void(0);" class="iconDown" id ="iconD" onclick="clickDownBar()">
           <i class="fas fa-caret-down"></i> </a>
-        <a href="javascript:void(0);" class="iconUp" id ="iconU" onclick="clickDownBar()">
+        <a aria-label = "close navigation" href="javascript:void(0);" class="iconUp" id ="iconU" onclick="clickDownBar()">
           <i class="fas fa-caret-up"></i>
         </a>
         <a href="javascript:void(0);" id = "home" onclick="clickDownBar()">FAQ</a>
@@ -62,11 +61,11 @@
 
       <div class = "webnav">
         <h1> buni ko</h1>
-        <div id = "navlinks">
+        <div id = "navlinksWeb">
           <a href="index.html">Home</a>
           <a href="product.html">Our Products</a>
           <a href="story.html">Our Story</a>
-          <a href="faq.html" id = "home">FAQ</a>
+          <a href="faq.html" id = "homeWeb">FAQ</a>
         </div>
       </div>
 
@@ -74,68 +73,77 @@
 
     <main>
 
-      <class id = "head">
+      <div id = "head">
         <h2> FAQ </h2>
-      </class>
+      </div>
         <div class = "intro" id = "intro">
-          <img id = "frame" src = "images/frame.png" />
-          <p id = "questions"> have you got questions? </p>
+          <img alt = "a frame" id = "frame" src = "images/frame.png" />
+          <h2 id = "questions"> have you got questions? </h2>
           <p id = "answers"> we've got the answers! </p>
-          <img id = "flower" src = "images/smallflower.png" />
+          <img alt = "a tuft of flowers" id = "flower" src = "images/smallflower.png" />
         </div>
 
 
-        <h3> what is kombucha exactly? </h3>
-        <p> lorem ipsum</p>
+        <h3 class = "first"> what is kombucha exactly? </h3>
+        <p > Kombucha is a fermented tea that's been around for centuries. It's fizzy
+          and can be flavored in many different ways!</p>
 
-        <img id = "divider" src = "images/squiggly.png" />
+        <img alt = "section divider" class = "divider" src = "images/squiggly.png" />
 
-        <h3> is kombucha healthy for you? </h3>
-        <p> lorem ipsum</p>
 
-        <img id = "divider2" src = "images/squiggly.png" />
+
+        <h3 > is kombucha healthy for you? </h3>
+        <p>Kombucha has many health benefits. Some of them are similar to a tea's, but others are
+        entirely its own. For example, kombucha can be a source of probiotics, antioxidants,
+      and could kill bacteria! It may also reduce the risk of heart disease.</p>
+
+        <img alt = "section divider" class = "divider2" src = "images/squiggly.png" />
 
         <h3> what's the process of making kombucha like?</h3>
-        <p> lorem ipsum</p>
+        <p> Kombucha is brewed over time starting with a piece of fermented yeast called
+        a scoby. Reach out to us to find out how to brew your own kombucha!</p>
 
-        <img id = "divider" src = "images/squiggly.png" />
+        <img alt = "section divider" class = "divider" src = "images/squiggly.png" />
 
         <h3> can you drink too much kombucha? </h3>
-        <p> lorem ipsum</p>
+        <p> Too much of anything can be a bad thing. Some people find that kombucha can
+        make their bowels particularly active. Each person is different, but it's important
+      to drink in moderation.</p>
 
-        <img id = "divider2" src = "images/squiggly.png" />
+        <img alt = "section divider" class = "divider2" src = "images/squiggly.png" />
 
         <h3> what's the difference between this kombucha and one that they sell in stores? </h3>
-        <p> lorem ipsum</p>
+        <p>This kombucha is homebrewed with local ingredients and lots of love! Other than
+        that, our processes are similar and similarly clean and safe.</p>
 
-        <img id = "divider" src = "images/squiggly.png" />
+        <img alt = "section divider" class = "divider" src = "images/squiggly.png" />
 
         <h3> can i make my own kombucha? </h3>
-        <p> lorem ipsum</p>
+        <p>Sure! All you need is some jars, a scoby, and lots of time. </p>
 
-        <img id = "divider2" src = "images/squiggly.png" />
+        <img alt = "section divider" class = "divider2" src = "images/squiggly.png" />
 
         <h3> when did buni ko start? </h3>
-        <p> lorem ipsum</p>
+        <p> buni ko began in 2020.</p>
 
-        <img id = "divider" src = "images/squiggly.png" />
+        <img alt = "section divider" class = "divider" src = "images/squiggly.png" />
 
         <a href="javascript:void(0);" class="upButton" id ="upButtonId" onclick="goUp()">
-          <img id = "up" src = "images/upbutton.png"/>
+          <img alt = "section divider" id = "up" src = "images/upbutton.png"/>
         </a>
 
     </main>
 
     <footer class = "footer">
-      <img id = "footerImg" src = "images/footer.png"/>
+      <img alt = "purple waves" id = "footerImg" src = "images/footer.png"/>
       <div class = "footerGrid">
         <p id = "footerName"> buni ko </p>
         <p id = "footerCopyright"> © Jessica Toma, 2020 </p>
-        <a href="index.html" id = "homeFooter">Home</a>
-        <a href="product.html" id = "productsFooter">Products</a>
-        <a href="story.html" id = "storyFooter">Story</a>
-        <a href="faq.html" id = "faqFooter">FAQ</a>
-        <a href="contact.html" id = "contactFooter">Contact</a>
+        <a aria-label = "home page" href="index.html" id = "homeFooter">Home</a>
+        <a aria-label = "our products" href="product.html" id = "productsFooter">Products</a>
+        <a aria-label = "our story" href="story.html" id = "storyFooter">Story</a>
+        <a aria-label = "frequently asked questions" href="faq.html" id = "faqFooter">FAQ</a>
+        <a aria-label = "contact" href="contact.html" id = "contactFooter">Contact</a>
       </div>
 
       <div class = "footerLarge">
@@ -152,17 +160,18 @@
           <label for="email">Email</label>
           <input type="text" id="email" name="emailadd" placeholder="example@gmail.com">
 
-          <label for="email">Subject</label>
+          <label for="subject">Subject</label>
           <input type="text" id="subject" name="subjectl" placeholder="how can we help you?">
 
-          <label for="subject">Body</label>
+          <label for="body">Body</label>
           <textarea id="body" name="body" placeholder="you can give us more details here" style="height:200px"></textarea>
 
           <input type="submit" value="Submit">
 
         </form>
       </div>
+      </div>
     </footer>
-    <script type="text/javascript" src="js/navscroll.js"></script>
-  </body
+    <script src="js/navscroll.js"></script>
+  </body>
   </html>
